@@ -11,17 +11,17 @@
         h1, h2, .serif { font-family: 'Playfair Display', serif; }
         .framed-image { position: relative; display: inline-block; }
         .framed-image::before {
-            content: ''; position: absolute; top: 15px; left: 15px;
-            width: 100%; height: 100%; border: 2px solid #1a1a1a; z-index: -1;
+            content: ''; position: absolute; top: 12px; left: 12px;
+            width: 100%; height: 100%; border: 1.5px solid #1a1a1a; z-index: -1;
         }
     </style>
 </head>
 <body>
 
     <!-- Navigation -->
-    <nav class="p-6 flex justify-between items-center uppercase tracking-widest text-[10px] font-bold border-b border-[#ece8de] sticky top-0 bg-[#fdfbf7]/90 backdrop-blur-sm z-50">
+    <nav class="p-6 flex justify-between items-center uppercase tracking-widest text-[10px] font-bold border-b border-[#ece8de] sticky top-0 bg-[#fdfbf7]/95 backdrop-blur-sm z-50">
         <a href="index.html" class="text-xs">AUSTIN WONG</a>
-        <div class="hidden md:flex space-x-6">
+        <div class="hidden md:flex space-x-8">
             <a href="index.html" class="opacity-50">Home</a>
             <a href="bio.html" class="hover:opacity-50">Bio</a>
             <a href="films.html" class="hover:opacity-50">Film Credits</a>
@@ -30,76 +30,75 @@
         </div>
     </nav>
 
-    <!-- Hero Section: Framed Design -->
-    <section class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-20 items-center">
-        <div class="flex justify-center md:justify-start">
-            <div class="framed-image w-64 md:w-80">
-                <img src="portrait.JPG" alt="Austin Wong" class="w-full shadow-lg">
-            </div>
+    <!-- Hero Section: Framed Design with Tighter Gap -->
+    <section class="max-w-5xl mx-auto px-6 py-24 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
+        <div class="framed-image w-64 md:w-72">
+            <img src="portrait.JPG" alt="Austin Wong" class="w-full shadow-lg">
         </div>
-        <div>
-            <h1 class="text-5xl md:text-7xl mb-4 italic leading-tight">Zhen Xiang Wong</h1>
-            <p class="uppercase tracking-[0.4em] text-sm font-bold border-b border-zinc-900 pb-2 inline-block">Director | Actor | Filmmaker</p>
+        <div class="text-center md:text-left">
+            <h1 class="text-6xl md:text-8xl italic leading-none">Austin Wong</h1>
+            <h2 class="serif text-4xl md:text-6xl italic opacity-80 mb-6">Zhen Xiang</h2>
+            <p class="uppercase tracking-[0.4em] text-base font-bold border-b border-zinc-900 pb-2 inline-block">Filmmaker | Director | Actor</p>
         </div>
     </section>
 
-    <!-- Bio & Showreel Section -->
-    <section class="bg-white py-20 border-y border-[#ece8de]">
-        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16">
+    <!-- Bio & Showreel Section (Text +2 Size) -->
+    <section class="bg-white py-24 border-y border-[#ece8de]">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-20">
             <div>
-                <h2 class="serif text-3xl italic mb-6">About Me</h2>
-                <p class="text-sm text-zinc-600 leading-relaxed font-light mb-4">
+                <h2 class="serif text-4xl italic mb-8">About Me</h2>
+                <p class="text-lg text-zinc-600 leading-relaxed font-light mb-6">
                     Final-year Film student at USW with a background in performing arts from Sunway University. With eight years of industry experience, I specialize in crafting narratives that explore human emotion through a bilingual lens.
                 </p>
-                <a href="bio.html" class="text-[10px] uppercase font-bold tracking-[0.2em] border-b border-zinc-900 pb-1 hover:opacity-50">View Full Bio</a>
+                <a href="bio.html" class="text-xs uppercase font-bold tracking-[0.2em] border-b border-zinc-900 pb-1 hover:opacity-50">View Full Bio</a>
             </div>
-            <div class="space-y-8 text-right">
-                <div class="grid grid-cols-2 gap-4">
+            <div class="space-y-10 text-right">
+                <div class="grid grid-cols-2 gap-6">
                     <div class="aspect-video bg-zinc-100 flex items-center justify-center border border-zinc-200">
-                        <span class="text-[10px] uppercase tracking-widest opacity-40 italic">Director Reel</span>
+                        <span class="text-xs uppercase tracking-widest opacity-40 italic">Director Reel</span>
                     </div>
                     <div class="aspect-video bg-zinc-100 flex items-center justify-center border border-zinc-200">
-                        <span class="text-[10px] uppercase tracking-widest opacity-40 italic">Acting Reel</span>
+                        <span class="text-xs uppercase tracking-widest opacity-40 italic">Acting Reel</span>
                     </div>
                 </div>
                 <div class="flex justify-end">
-                    <a href="#" target="_blank" class="bg-zinc-900 text-white px-6 py-2 text-[10px] uppercase tracking-[0.2em] font-bold hover:bg-zinc-800 transition-all">My latest CV</a>
+                    <a href="#" target="_blank" class="bg-zinc-900 text-white px-8 py-3 text-xs uppercase tracking-[0.2em] font-bold hover:bg-zinc-800 transition-all">My latest CV</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Artistic Statement Section -->
-    <section class="max-w-6xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-16 items-center">
-        <div>
+    <!-- Artistic Statement Section (Text +2 Size) -->
+    <section class="max-w-6xl mx-auto px-6 py-28 grid md:grid-cols-2 gap-20 items-center">
+        <div class="order-2 md:order-1">
             <img src="picture_2.png" alt="Working on Set" class="w-full shadow-md">
         </div>
-        <div class="space-y-6">
-            <h2 class="serif text-4xl italic">Artist Statement</h2>
-            <p class="text-zinc-600 italic font-light leading-relaxed">
-                "I want to be a director, videographer & photographer, producer or an actor, making films or contents rooted in naturalism and exploring the untold stories of overlooked characters and the emotions hidden in society... Life is content, so all life deserves to be seen as content."
+        <div class="space-y-8 order-1 md:order-2">
+            <h2 class="serif text-5xl italic">Artist Statement</h2>
+            <p class="text-xl text-zinc-700 italic font-light leading-relaxed">
+                "I want to be a director, videographer & photographer, producer or an actor, making diverse films or contents rooted in naturalism and exploring the untold stories of overlooked characters and the emotions hidden in society... Life is content, so all life deserves to be seen as content."
             </p>
         </div>
     </section>
 
     <!-- My Work Section -->
-    <section class="bg-zinc-900 py-24 text-white text-center">
-        <h2 class="serif text-4xl italic mb-12">My Work</h2>
-        <div class="max-w-xl mx-auto grid grid-cols-2 gap-4 px-6">
-            <a href="films.html" class="border border-white/30 py-8 uppercase tracking-widest text-xs font-bold hover:bg-white hover:text-black transition-all">Film Credits</a>
-            <a href="acting.html" class="border border-white/30 py-8 uppercase tracking-widest text-xs font-bold hover:bg-white hover:text-black transition-all">Acting Credits</a>
+    <section class="bg-zinc-900 py-28 text-white text-center">
+        <h2 class="serif text-5xl italic mb-16">My Work</h2>
+        <div class="max-w-2xl mx-auto grid grid-cols-2 gap-6 px-6">
+            <a href="films.html" class="border border-white/30 py-10 uppercase tracking-widest text-sm font-bold hover:bg-white hover:text-black transition-all">Film Credits</a>
+            <a href="acting.html" class="border border-white/30 py-10 uppercase tracking-widest text-sm font-bold hover:bg-white hover:text-black transition-all">Acting Credits</a>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="max-w-4xl mx-auto px-6 py-24 text-center">
-        <h2 class="serif text-4xl italic mb-12">Contact</h2>
-        <div class="flex flex-wrap justify-center gap-12 text-xs uppercase tracking-[0.3em] font-bold">
-            <a href="https://instagram.com/wong_zx_928" target="_blank" class="hover:opacity-50">Instagram</a>
+    <!-- Contact Section (Text +2 Size) -->
+    <section id="contact" class="max-w-5xl mx-auto px-6 py-28 text-center">
+        <h2 class="serif text-5xl italic mb-16">Contact</h2>
+        <div class="flex flex-wrap justify-center gap-16 text-sm uppercase tracking-[0.3em] font-bold">
+            <a href="https://instagram.com/austin_wzx_928" target="_blank" class="hover:opacity-50">Instagram</a>
             <a href="mailto:austin928.w@gmail.com" class="hover:opacity-50">Email</a>
-            <a href="#" target="_blank" class="hover:opacity-50">LinkedIn</a>
+            <a href="https://linkedin.com/in/austin-wong-64900333b" target="_blank" class="hover:opacity-50">LinkedIn</a>
         </div>
-        <p class="mt-20 text-[10px] uppercase tracking-[0.4em] opacity-40">© 2026 Austin Wong Zhen Xiang</p>
+        <p class="mt-24 text-[10px] uppercase tracking-[0.4em] opacity-40">© 2026 Austin Wong Zhen Xiang</p>
     </section>
 
 </body>
