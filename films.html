@@ -1,164 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" href="austinwong_pavicon.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Films | Austin Wong</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; background-color: #fdfbf7; color: #1a1a1a; }
-        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
-        .project-card { border-bottom: 1px solid #e5e7eb; padding-bottom: 3rem; margin-bottom: 3rem; }
-        .project-card:last-child { border-bottom: none; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Film Credits | Austin Wong</title>
+  <link rel="icon" type="image/png" href="austin_wong_favicon.png">
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-[#0C0C0C] text-[#FDFBF7] font-sans antialiased selection:bg-[#FDFBF7] selection:text-[#0C0C0C]">
 
-    <!-- Navigation -->
-<nav class="p-6 flex justify-between items-center uppercase tracking-widest text-[10px] font-bold border-b border-[#ece8de]">
-    <a href="index.html" class="text-xs inline-flex items-center gap-2">
-  <img src="austinwong_pavicon.png" alt="Logo" class="w-6 h-6 object-contain">
-  <span>AUSTIN WONG</span>
-</a>
-    <div class="hidden md:flex space-x-6">
-        <a href="index.html" class="hover:opacity-50">Home</a>
-        <a href="films.html" class="hover:opacity-50">Film Credits</a>
-        <a href="acting.html" class="hover:opacity-50">Acting Credits</a>
-        <a href="index.html#contact" class="hover:opacity-50">Contact</a>
+  <!-- Navigation Bar -->
+  <nav class="p-6 flex justify-between items-center uppercase tracking-widest text-[10px] font-bold border-b border-[#222222] sticky top-0 bg-[#0C0C0C]/95 backdrop-blur-md z-50 text-[#FDFBF7]">
+    <a href="index.html" class="text-xs inline-flex items-center gap-2 text-[#FDFBF7] hover:opacity-80 transition-opacity">
+      <img src="austinwong_pavicon.png" alt="Logo" class="w-4 h-4 object-contain">
+      <span>AUSTIN WONG</span>
+    </a>
+    
+    <div class="hidden md:flex space-x-8">
+      <a href="index.html" class="text-gray-400 hover:text-[#FDFBF7] transition-colors">Home</a>
+      <a href="film.html" class="text-[#FDFBF7] hover:text-gray-400 transition-colors">Film Credits</a>
+      <a href="acting.html" class="text-gray-400 hover:text-[#FDFBF7] transition-colors">Acting Credits</a>
+      <a href="contact.html" class="text-gray-400 hover:text-[#FDFBF7] transition-colors">Contact</a>
     </div>
-</nav>
+  </nav>
 
-    <!-- Header Section -->
-    <header class="bg-zinc-800 text-white py-12 text-center">
-        <h1 class="text-5xl uppercase tracking-[0.2em] italic">Films Credits</h1>
-    </header>
+  <!-- Page Header -->
+  <section class="pt-16 pb-12 px-8 md:px-16 max-w-6xl mx-auto">
+    <h1 class="text-5xl md:text-7xl font-serif italic tracking-tight text-[#FDFBF7]">
+      Film Credits
+    </h1>
+    <p class="mt-4 text-xs md:text-sm tracking-widest uppercase font-semibold text-[#FDFBF7]/70">
+      Directing &nbsp;|&nbsp; Cinematography &nbsp;|&nbsp; Camera & Production
+    </p>
+  </section>
 
-    <!-- Project List -->
-    <main class="max-w-5xl mx-auto px-6 py-20">
-        
-        <!-- Project 1: Dealing with Death -->
-        <div class="project-card grid md:grid-cols-2 gap-12 items-start">
-            <img src="death_1.png" alt="Dealing with Death" class="w-full shadow-lg">
-            <div class="space-y-4">
-                <p class="text-3xl font-bold text-zinc-400">2026</p>
-                <h3 class="text-4xl italic">Dealing with Death</h3>
-                <p class="text-sm font-semibold uppercase tracking-widest border-b border-zinc-300 pb-2">Presented by USW BA Film</p>
-                <p class="text-zinc-600 leading-relaxed font-light">After inheriting his late father’s failing funeral business, awkward undertaker Graham stumbles into a deadly opportunity that begins to transform his fortunes. But as lies and murder pile up, Graham descends into a dark obsession with success, sacrificing his morality in the process.</p>
-                <div class="pt-4">
-                    <p class="font-bold text-sm uppercase">Roles:</p>
-                    <p class="text-zinc-600 italic">Director, Co-Screenwriter</p>
-                </div>
-                <div class="pt-6">
-                    <span class="bg-zinc-200 text-zinc-500 px-6 py-3 text-xs uppercase tracking-widest cursor-not-allowed">Coming Soon</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Project 2: Promise, again -->
-        <div class="project-card grid md:grid-cols-2 gap-12 items-start">
-            <img src="dpa_fyp_promise_again_poster.png" alt="Promise, again" class="w-full shadow-lg">
-            <div class="space-y-4">
-                <p class="text-3xl font-bold text-zinc-400">2025</p>
-                <h3 class="text-4xl italic">Promise, again</h3>
-                <p class="text-sm font-semibold uppercase tracking-widest border-b border-zinc-300 pb-2">Presented by DPA, Sunway University</p>
-                <p class="text-zinc-600 leading-relaxed font-light">A divorced traditional-minded and middled-aged woman, the mother is trying to nurture well and take good care of her only rebellious 18 year-old daughter, in order to revive the broken family and heal her trauma of losing someone important in her life.</p>
-                <div class="pt-4">
-                    <p class="font-bold text-sm uppercase">Roles:</p>
-                    <p class="text-zinc-600 italic">Director, Screenwriter, Casting Director, Co-editor, Colourist</p>
-                </div>
-                <div class="pt-6">
-                    <a href="https://drive.google.com/file/d/1PhZDzdOQf7h8yThwVncaOmLL4vPYymIT/view" target="_blank" class="bg-zinc-800 text-white px-8 py-3 text-xs uppercase tracking-widest font-bold hover:bg-zinc-600 transition-all">Watch</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Project 3: The Candle -->
-        <div class="project-card grid md:grid-cols-2 gap-12 items-start">
-            <img src="the_candle.png" alt="The Candle" class="w-full shadow-lg">
-            <div class="space-y-4">
-                <p class="text-3xl font-bold text-zinc-400">2024</p>
-                <h3 class="text-4xl italic">The Candle</h3>
-                <p class="text-sm font-semibold uppercase tracking-widest border-b border-zinc-300 pb-2">Presented by Austin Wong Channel</p>
-                <p class="text-zinc-600 leading-relaxed font-light">Hao, 25, lives in a small, cramped apartment and has been in a long-distance relationship with his girlfriend, Jessica, who’s in Toronto. For their anniversary, Jessica sent him a ring as a gift. Hao feels challenged to give her something back because of his living situation, but a sweet message from her motivates him to try his best to return the gesture.</p>
-                <div class="pt-4">
-                    <p class="font-bold text-sm uppercase">Roles:</p>
-                    <p class="text-zinc-600 italic">Director, Screenwriter, Cinematographer, Editor</p>
-                </div>
-                <div class="pt-6">
-                    <a href="https://youtu.be/Lqps4Skh6js" target="_blank" class="bg-zinc-800 text-white px-8 py-3 text-xs uppercase tracking-widest font-bold hover:bg-zinc-600 transition-all">Watch</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Project 4: Comfort in Discomfort -->
-        <div class="project-card grid md:grid-cols-2 gap-12 items-start">
-            <img src="comfort_in_discomfort.png" alt="Comfort in Discomfort" class="w-full shadow-lg">
-            <div class="space-y-4">
-                <p class="text-3xl font-bold text-zinc-400">2023</p>
-                <h3 class="text-4xl italic">Comfort in Discomfort</h3>
-                <p class="text-sm font-semibold uppercase tracking-widest border-b border-zinc-300 pb-2">Presented by DPA, Sunway University</p>
-                <p class="text-zinc-600 leading-relaxed font-light">A 15-minute family documentary film unfolding the stories and accident happen in the family members, sharing memories of Jasmyn, DPA 2023 student with her family throughout her growing journey.</p>
-                <div class="pt-4">
-                    <p class="font-bold text-sm uppercase">Roles:</p>
-                    <p class="text-zinc-600 italic">Director, Editor</p>
-                </div>
-                <div class="pt-6">
-                    <a href="https://youtu.be/0cnk3DnW6GM" target="_blank" class="bg-zinc-800 text-white px-8 py-3 text-xs uppercase tracking-widest font-bold hover:bg-zinc-600 transition-all">Watch</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Project 5: the luck he left behind -->
-        <div class="project-card grid md:grid-cols-2 gap-12 items-start">
-            <img src="the_luck_he_left_behind.png" alt="the luck he left behind" class="w-full shadow-lg">
-            <div class="space-y-4">
-                <p class="text-3xl font-bold text-zinc-400">2023</p>
-                <h3 class="text-4xl italic">the luck he left behind</h3>
-                <p class="text-sm font-semibold uppercase tracking-widest border-b border-zinc-300 pb-2">Presented by DPA, Sunway University</p>
-                <p class="text-zinc-600 leading-relaxed font-light">A student documentary film discovering the impressions, memories, and impact of Kelvin Wong, the founder of Theatresauce, and the former Program Leader of Sunway University Diploma in Performing Arts.</p>
-                <div class="pt-4">
-                    <p class="font-bold text-sm uppercase">Roles:</p>
-                    <p class="text-zinc-600 italic">Assistant Director, Camera Assistant</p>
-                </div>
-                <div class="pt-6">
-                    <a href="https://drive.google.com/file/d/1IHWoOtUbitCBrkpTwoFYpJThcwN7c5cx/view" target="_blank" class="bg-zinc-800 text-white px-8 py-3 text-xs uppercase tracking-widest font-bold hover:bg-zinc-600 transition-all">Watch</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Project 6: The Fabulous Secret of Arowana -->
-        <div class="project-card grid md:grid-cols-2 gap-12 items-start">
-            <img src="the_fabulous_secret_of_arowana_poster.png" alt="The Fabulous Secret of Arowana" class="w-full shadow-lg">
-            <div class="space-y-4">
-                <p class="text-3xl font-bold text-zinc-400">2023</p>
-                <h3 class="text-4xl italic">The Fabulous Secret of Arowana</h3>
-                <p class="text-sm font-semibold uppercase tracking-widest border-b border-zinc-300 pb-2">Presented by Storideas Sdn. Bhd.</p>
-                <p class="text-zinc-600 leading-relaxed font-light">Yan Yin, a PhD student, as she pursues her late father’s unfinished dragonfish research at a farm, where she bonds with Ji Long, a man struggling with PTSD.</p>
-                <div class="pt-4">
-                    <p class="font-bold text-sm uppercase">Roles:</p>
-                    <p class="text-zinc-600 italic">Props Maker</p>
-                </div>
-                <div class="pt-6">
-                    <a href="https://youtu.be/0d8eKD3LSso?list=LL" target="_blank" class="bg-zinc-800 text-white px-8 py-3 text-xs uppercase tracking-widest font-bold hover:bg-zinc-600 transition-all">Watch</a>
-                </div>
-            </div>
-        </div>
-
-    </main>
-
-    <!-- Footer -->
-    <footer id="contact" class="bg-zinc-100 py-12">
-        <div class="max-w-6xl mx-auto px-6 text-center space-y-6">
-            <div class="flex justify-center space-x-12 text-sm uppercase tracking-widest font-bold">
-                <a href="index.html" class="hover:text-zinc-500">Back Home</a>
-                <a href="#" class="hover:text-zinc-500">Instagram</a>
-                <a href="#" class="hover:text-zinc-500">LinkedIn</a>
-            </div>
-            <p class="text-xs text-zinc-400 uppercase tracking-widest">© 2026 Austin Wong Zhen Xiang</p>
-        </div>
-    </footer>
+  <!-- Credits Container -->
+  <main class="max-w-6xl mx-auto px-8 md:px-16 pb-24">
+    <!-- Place your film project cards / grid list here -->
+    <div class="border-t border-[#222222] pt-12">
+      <!-- Your existing film project items will go inside here -->
+    </div>
+  </main>
 
 </body>
 </html>
