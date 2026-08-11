@@ -30,17 +30,20 @@
         </div>
     </nav>
 
-    <!-- Hero Section: Framed Design with Tighter Gap -->
-    <section class="max-w-5xl mx-auto px-6 py-24 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
-        <div class="framed-image w-64 md:w-72">
-            <img src="portrait.JPG" alt="Austin Wong" class="w-full shadow-lg">
-        </div>
-        <div class="text-center md:text-left">
-            <h1 class="text-6xl md:text-8xl italic leading-none">Austin Wong</h1>
-            <h2 class="serif text-4xl md:text-6xl italic opacity-80 mb-6">Zhen Xiang</h2>
-            <p class="uppercase tracking-[0.4em] text-base font-bold border-b border-zinc-900 pb-2 inline-block">Filmmaker | Director | Actor</p>
-        </div>
-    </section>
+    <!-- Hero Section with Custom Gradient Background Image -->
+  <section class="relative w-full h-[85vh] min-h-[500px] flex items-center justify-center bg-cover bg-center overflow-hidden" style="background-image: url('main_page_image.png');">
+    
+    <!-- Text content floating on top -->
+    <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <h1 class="text-6xl md:text-8xl font-serif italic tracking-tight text-[#FDFBF7]">
+        Austin Wong
+      </h1>
+      <p class="mt-6 text-xs md:text-sm tracking-widest uppercase font-semibold text-[#FDFBF7]/90">
+        Assistant Director &nbsp;|&nbsp; Director &nbsp;|&nbsp; Cinematographer
+      </p>
+    </div>
+      
+  </section>
 
     <!-- Bio & Showreel Section (Text +2 Size) -->
     <section class="bg-white py-24 border-y border-[#ece8de]">
