@@ -66,24 +66,28 @@
 </script>
 
     <!-- Hero Section with Custom Gradient Background Image -->
-  <section class="relative w-full h-[85vh] min-h-[500px] flex items-center justify-center bg-cover bg-[0%_0%] md:bg-[position:center_25%] overflow-hidden" style="background-image: url('main_image.png');">
+ <section class="relative w-full h-[85vh] min-h-[500px] flex flex-col items-center justify-center bg-cover bg-[0%_0%] md:bg-[position:center_25%] overflow-hidden" style="background-image: url('main_page_image.png');">
+  
+  <!-- Content Wrapper forced into column layout -->
+  <div class="flex flex-col items-center justify-center text-center">
     
-  <!-- Main Name Title with Dark Grey Drop Shadow -->
-<h1 class="text-4xl sm:text-6xl md:text-7xl font-serif tracking-tight text-[#FDFBF7] drop-shadow-[0_4px_12px_rgba(0,0,0,0.85)]">
-  Austin Wong
-</h1>
+    <!-- Title -->
+    <h1 class="text-4xl sm:text-6xl md:text-7xl font-serif tracking-tight text-[#FDFBF7] drop-shadow-[0_4px_12px_rgba(0,0,0,0.85)]">
+      Austin Wong
+    </h1>
 
-<!-- Subtitle Titles with Subtle Dark Shadow -->
-<p class="mt-6 text-xs md:text-sm tracking-widest uppercase font-semibold text-[#FDFBF7]/90 flex flex-col md:flex-row md:items-center md:justify-center gap-2 md:gap-4 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
-  <span>Assistant Director</span>
-  <span class="hidden md:inline text-xs text-[#FDFBF7]/40">|</span>
-  <span>Director</span>
-  <span class="hidden md:inline text-xs text-[#FDFBF7]/40">|</span>
-  <span>Cinematographer</span>
-</p>
-    </div>
-      
-  </section>
+    <!-- Subtitle -->
+    <p class="mt-6 text-xs md:text-sm tracking-widest uppercase font-semibold text-[#FDFBF7]/90 flex flex-col md:flex-row md:items-center md:justify-center gap-2 md:gap-4 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
+      <span>Assistant Director</span>
+      <span class="hidden md:inline text-xs text-[#FDFBF7]/40">|</span>
+      <span>Director</span>
+      <span class="hidden md:inline text-xs text-[#FDFBF7]/40">|</span>
+      <span>Cinematographer</span>
+    </p>
+
+  </div>
+
+</section>
 
     <!-- Showreel Section (Oil Black Background) -->
 <section class="py-20 px-6 bg-[#0C0C0C] text-[#FDFBF7] border-b border-[#222222]">
