@@ -173,12 +173,13 @@
           <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
         </a>
 
-        <!-- Email (Direct mailto) -->
-        <a href="mailto:contact@austinwong.uk" aria-label="Email" class="hover:opacity-60 transition-opacity">
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-12 1.516l8.471-6.865-8.471-6.865v13.73zm24 0v-13.73l-8.471 6.865 8.471 6.865zm-11.082-6.027l-8.918 7.227h20l-8.918-7.227z"/></svg>
-        </a>
-      </div>
-    </div>
+        <!-- Clean Envelope Email Icon -->
+<a href="mailto:contact@austinwong.uk" aria-label="Email" class="hover:opacity-60 transition-opacity">
+  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+  </svg>
+</a>
+<div>
 
     <!-- MIDDLE COLUMN: Quick Navigation -->
     <div class="flex-1 max-w-xs">
@@ -204,20 +205,21 @@
         SEARCH
       </h3>
       
-      <form onsubmit="handleSiteSearch(event)" class="flex items-center w-full">
-        <input 
-          type="text" 
-          id="site-search-input"
-          placeholder="Search projects, roles..." 
-          class="w-full bg-white text-black px-4 py-2.5 text-sm focus:outline-none placeholder-gray-500 rounded-none"
-        />
-        <button 
-          type="submit" 
-          class="bg-white text-black font-bold text-sm px-5 py-2.5 border-l border-gray-300 hover:bg-gray-200 transition-colors rounded-none whitespace-nowrap"
-        >
-          Search
-        </button>
-      </form>
+      <form onsubmit="handleSiteSearch(event); return false;" class="flex items-center w-full">
+  <input 
+    type="text" 
+    id="site-search-input"
+    placeholder="Search projects, roles..." 
+    class="w-full bg-white text-black px-4 py-2.5 text-sm focus:outline-none placeholder-gray-500 rounded-none"
+  />
+  <button 
+    type="button" 
+    onclick="handleSiteSearch(event)"
+    class="bg-white text-black font-bold text-sm px-5 py-2.5 border-l border-gray-300 hover:bg-gray-200 transition-colors rounded-none whitespace-nowrap"
+  >
+    Search
+  </button>
+</form>
     </div>
 
   </div>
@@ -230,3 +232,26 @@
   </div>
 
 </footer>
+<script>
+  function handleSiteSearch(event) {
+    if (event) event.preventDefault();
+
+    const input = document.getElementById('site-search-input');
+    if (!input) return;
+
+    const query = input.value.trim().toLowerCase();
+    if (!query) return;
+
+    if (query.includes('death') || query.includes('dealing') || query.includes('film')) {
+      window.location.href = 'films.html#dealing-with-death';
+    } else if (query.includes('dilly') || query.includes('acting') || query.includes('performance')) {
+      window.location.href = 'acting.html#dilly-dally';
+    } else if (query.includes('cv') || query.includes('resume')) {
+      window.open('Austin%20Wong_CV_Aug2026.pdf', '_blank');
+    } else {
+      window.location.href = 'films.html';
+    }
+  }
+</script>
+ </body>
+ </html>
