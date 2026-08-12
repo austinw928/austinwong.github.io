@@ -144,7 +144,9 @@
 </section>
     
     <!-- Contact / Footer Section -->
-<footer id="contact" class="bg-zinc-800 text-[#FDFBF7] pt-16 pb-8 px-6 border-t border-[#222222]">
+<footer id="contact" class="bg-zinc-800 text-[#FDFBF7] pt-16 pb-8 px-6 border-t border-[#222222] w-full">
+  
+  <!-- Main 3-Column Layout -->
   <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 md:gap-8 pb-12">
     
     <!-- LEFT COLUMN: Name, Roles & Social Icons -->
@@ -174,17 +176,16 @@
         </a>
 
         <!-- Clean Envelope Email Icon -->
-<a href="mailto:contact@austinwong.uk" aria-label="Email" class="hover:opacity-60 transition-opacity">
-  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-  </svg>
-</a>
-<div>
+        <a href="mailto:contact@austinwong.uk" aria-label="Email" class="hover:opacity-60 transition-opacity">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+      </div>
+    </div>
 
     <!-- MIDDLE COLUMN: Quick Navigation -->
     <div class="flex-1 max-w-xs">
       <h3 class="text-xs font-bold uppercase tracking-widest text-[#FDFBF7]/50 mb-4">
-        More Info
+        MORE INFO
       </h3>
       <ul class="space-y-3 text-sm font-semibold">
         <li>
@@ -199,39 +200,41 @@
       </ul>
     </div>
 
-    <!-- RIGHT COLUMN: Search Bar (Option B) -->
+    <!-- RIGHT COLUMN: Search Bar -->
     <div class="flex-1 max-w-sm w-full">
       <h3 class="text-xs font-bold uppercase tracking-widest text-[#FDFBF7] mb-3">
         SEARCH
       </h3>
       
       <form onsubmit="handleSiteSearch(event); return false;" class="flex items-center w-full">
-  <input 
-    type="text" 
-    id="site-search-input"
-    placeholder="Search projects, roles..." 
-    class="w-full bg-white text-black px-4 py-2.5 text-sm focus:outline-none placeholder-gray-500 rounded-none"
-  />
-  <button 
-    type="button" 
-    onclick="handleSiteSearch(event)"
-    class="bg-white text-black font-bold text-sm px-5 py-2.5 border-l border-gray-300 hover:bg-gray-200 transition-colors rounded-none whitespace-nowrap"
-  >
-    Search
-  </button>
-</form>
+        <input 
+          type="text" 
+          id="site-search-input"
+          placeholder="Search projects, roles..." 
+          class="w-full bg-white text-black px-4 py-2.5 text-sm focus:outline-none placeholder-gray-500 rounded-none"
+        />
+        <button 
+          type="button" 
+          onclick="handleSiteSearch(event)"
+          class="bg-white text-black font-bold text-sm px-5 py-2.5 border-l border-gray-300 hover:bg-gray-200 transition-colors rounded-none whitespace-nowrap"
+        >
+          Search
+        </button>
+      </form>
     </div>
 
   </div>
 
   <!-- BOTTOM COPYRIGHT BAR -->
-  <div class="pt-8 border-t border-[#FDFBF7]/10 text-center">
+  <div class="pt-8 border-t border-[#FDFBF7]/10 text-center w-full">
     <p class="text-xs tracking-[0.25em] text-[#FDFBF7]/60 uppercase font-light">
       &copy; 2026 AUSTIN WONG ZHEN XIANG
     </p>
   </div>
 
 </footer>
+
+<!-- Search Redirect Logic -->
 <script>
   function handleSiteSearch(event) {
     if (event) event.preventDefault();
@@ -253,5 +256,6 @@
     }
   }
 </script>
- </body>
- </html>
+
+</body>
+</html>
