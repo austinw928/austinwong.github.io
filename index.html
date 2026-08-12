@@ -236,6 +236,28 @@
 
 <!-- Search Redirect Logic -->
 <script>
+  // 1. Central Project Index (Add new projects here anytime!)
+  const siteIndex = [
+    {
+      keywords: ['dealing with death', 'death', 'dealing', 'short film', 'dark comedy', 'director', 'film'],
+      url: 'films.html#dealing-with-death'
+    },
+    {
+      keywords: ['dilly dally', 'dilly', 'dally', 'acting', 'performance', 'actor'],
+      url: 'acting.html#dilly-dally'
+    },
+    {
+      keywords: ['cv', 'resume', 'curriculum vitae', 'download cv'],
+      url: 'Austin%20Wong_CV_Aug2026.pdf',
+      isExternal: true
+    },
+    {
+      keywords: ['cinematographer', 'dop', 'camera', 'showreel'],
+      url: 'films.html'
+    }
+  ];
+
+  // 2. Dynamic Search Handler
   function handleSiteSearch(event) {
     if (event) event.preventDefault();
 
@@ -245,13 +267,19 @@
     const query = input.value.trim().toLowerCase();
     if (!query) return;
 
-    if (query.includes('death') || query.includes('dealing') || query.includes('film')) {
-      window.location.href = 'films.html#dealing-with-death';
-    } else if (query.includes('dilly') || query.includes('acting') || query.includes('performance')) {
-      window.location.href = 'acting.html#dilly-dally';
-    } else if (query.includes('cv') || query.includes('resume')) {
-      window.open('Austin%20Wong_CV_Aug2026.pdf', '_blank');
+    // Searches across all keywords automatically
+    const matchedResult = siteIndex.find(item => 
+      item.keywords.some(keyword => query.includes(keyword) || keyword.includes(query))
+    );
+
+    if (matchedResult) {
+      if (matchedResult.isExternal) {
+        window.open(matchedResult.url, '_blank');
+      } else {
+        window.location.href = matchedResult.url;
+      }
     } else {
+      // General fallback if no keyword matches
       window.location.href = 'films.html';
     }
   }
