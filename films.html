@@ -114,8 +114,11 @@
 
 
         <!-- Project: The Bench -->
-<div id="bench" class="project-card grid md:grid-cols-2 gap-12 items-start mt-16">
-  <img src="the_bench.png" alt="The Bench" class="w-full shadow-lg" />
+<div id="bench" class="project-card flex flex-col items-center mt-16">
+  <div class="grid md:grid-cols-2 gap-12 items-center w-full">
+  <div class="w-full flex justify-center">
+    <img src="bench.png" alt="The Bench" class="w-full shadow-lg object-contain" />
+  </div>
   <div class="space-y-4">
     <p class="text-3xl font-bold text-[#FDFBF7]/60">2026</p>
     <h3 class="text-4xl italic">The Bench</h3>
@@ -125,22 +128,29 @@
     <p class="text-[#FDFBF7]/80 leading-relaxed font-light">
       A grieving elderly man and a heartbroken young stranger form a silent bond over several days, exchanging small acts of kindness that ultimately help the young man heal and carry that compassion forward after the old man is gone.
     </p>
-    <div class="pt-4">
-      <p class="font-bold text-sm uppercase">Roles:</p>
-      <p class="text-[#FDFBF7]/80 italic">2nd Assistant Director</p>
-    </div>
-    <div class="pt-6">
-     <a 
-  href="https://youtu.be/IJnSh0cZyqw?list=LL" 
-  target="_blank" 
-  rel="noopener noreferrer" 
-  class="inline-block bg-[#19181A] text-[#FDFBF7]/50 border border-[#222222] hover:bg-[#FDFBF7] hover:text-black hover:border-[#FDFBF7] px-6 py-3 text-xs font-bold uppercase tracking-widest transition-colors duration-200"
->
-  Watch
-</a>
+    <div class="pt-4 flex justify-between items-end">
+      <div>
+        <p class="font-bold text-sm uppercase">Roles:</p>
+        <p class="text-[#FDFBF7]/80 italic">2nd Assistant Director</p>
+      </div>
+      <a 
+        href="https://youtu.be/IJnSh0cZyqw?list=LL" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="inline-block bg-[#19181A] text-[#FDFBF7]/50 border border-[#222222] hover:bg-[#FDFBF7] hover:text-black hover:border-[#FDFBF7] px-6 py-3 text-xs font-bold uppercase tracking-widest transition-colors duration-200"
+      >
+        Watch
+      </a>
     </div>
   </div>
 </div>
+    <!-- Centered Film Stills Button -->
+  <div class="w-full flex justify-center pt-14">
+    <a href="#bench-stills" class="inline-block bg-[#19181A] text-[#FDFBF7]/50 border border-[#222222] hover:bg-[#FDFBF7] hover:text-black hover:border-[#FDFBF7] px-12 py-3 text-xs font-bold uppercase tracking-widest transition-colors duration-200">
+      Film Stills
+    </a>
+  </div>
+</div> <!-- Close project-card -->
 
         <!-- Project 2: Promise, again -->
         <div id="promise" class="project-card flex flex-col items-center">
@@ -174,58 +184,104 @@
                 
 
         <!-- Project 3: The Candle -->
-        <div class="project-card grid md:grid-cols-2 gap-12 items-start">
+        <div id="candle" class="project-card flex flex-col items-center">
+  <div class="grid md:grid-cols-2 gap-12 items-center w-full">
             <img src="the_candle.png" alt="The Candle" class="w-full shadow-lg">
             <div class="space-y-4">
                 <p class="text-3xl font-bold text-[#FDFBF7]/60">2024</p>
                 <h3 class="text-4xl italic">The Candle</h3>
                 <p class="text-sm font-semibold uppercase tracking-widest border-b border-[#222222] pb-2">Presented by Austin Wong Channel</p>
                 <p class="text-[#FDFBF7]/80 leading-relaxed font-light">Hao, 25, lives in a small, cramped apartment and has been in a long-distance relationship with his girlfriend, Jessica, who’s in Toronto. For their anniversary, Jessica sent him a ring as a gift. Hao feels challenged to give her something back because of his living situation, but a sweet message from her motivates him to try his best to return the gesture.</p>
-                <div class="pt-4">
-                    <p class="font-bold text-sm uppercase">Roles:</p>
-                    <p class="text-[#FDFBF7]/80 italic">Director, Screenwriter, Cinematographer, Editor</p>
-                </div>
-                <div class="pt-6">
-                    <a href="https://youtu.be/Lqps4Skh6js" target="_blank" class="bg-[#19181A] text-[#FDFBF7]/50 border border-[#222222] px-8 py-3 text-xs uppercase tracking-widest font-bold hover:bg-[#FDFBF7] hover:text-[#0C0C0C] transition-all">Watch</a>
-                </div>
-            </div>
-        </div>
+                <div class="pt-4 flex justify-between items-end">
+  <div>
+    <p class="font-bold text-sm uppercase">Roles:</p>
+    <p class="text-[#FDFBF7]/80 italic">Director, Screenwriter, Editor, Actor</p>
+  </div>
+  <a 
+    href="https://youtu.be/Lqps4Skh6js" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    class="inline-block bg-[#19181A] text-[#FDFBF7]/50 border border-[#222222] hover:bg-[#FDFBF7] hover:text-black hover:border-[#FDFBF7] px-6 py-3 text-xs font-bold uppercase tracking-widest transition-colors duration-200"
+  >
+    Watch
+  </a>
+</div>
+</div>
+</div>
+ <!-- Centered Film Stills Button -->
+  <div class="w-full flex justify-center pt-14">
+    <a href="#candle-stills" class="inline-block bg-[#19181A] text-[#FDFBF7]/50 border border-[#222222] hover:bg-[#FDFBF7] hover:text-black hover:border-[#FDFBF7] px-12 py-3 text-xs font-bold uppercase tracking-widest transition-colors duration-200">
+      Film Stills
+    </a>
+  </div>
+</div> <!-- Close project-card -->
 
         <!-- Project 4: Comfort in Discomfort -->
-        <div class="project-card grid md:grid-cols-2 gap-12 items-start">
+        <div id="comfort-in-discomfort" class="project-card flex flex-col items-center">
+  <div class="grid md:grid-cols-2 gap-12 items-center w-full">
             <img src="comfort_in_discomfort.png" alt="Comfort in Discomfort" class="w-full shadow-lg">
             <div class="space-y-4">
                 <p class="text-3xl font-bold text-[#FDFBF7]/60">2023</p>
                 <h3 class="text-4xl italic">Comfort in Discomfort</h3>
                 <p class="text-sm font-semibold uppercase tracking-widest border-b border-[#222222] pb-2">Presented by DPA, Sunway University</p>
                 <p class="text-[#FDFBF7]/80 leading-relaxed font-light">A 15-minute family documentary film unfolding the stories and accident happen in the family members, sharing memories of Jasmyn, DPA 2023 student with her family throughout her growing journey.</p>
-                <div class="pt-4">
-                    <p class="font-bold text-sm uppercase">Roles:</p>
-                    <p class="text-[#FDFBF7]/80 italic">Director, Editor</p>
-                </div>
-                <div class="pt-6">
-                    <a href="https://youtu.be/0cnk3DnW6GM" target="_blank" class="bg-[#19181A] text-[#FDFBF7]/50 border border-[#222222] px-8 py-3 text-xs uppercase tracking-widest font-bold hover:bg-[#FDFBF7] hover:text-[#0C0C0C] transition-all">Watch</a>
-                </div>
-            </div>
-        </div>
+                <div class="pt-4 flex justify-between items-end">
+  <div>
+    <p class="font-bold text-sm uppercase">Roles:</p>
+    <p class="text-[#FDFBF7]/80 italic">Director, Camera Assistant</p>
+  </div>
+  <a 
+    href="https://youtu.be/0cnk3DnW6GM" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    class="inline-block bg-[#19181A] text-[#FDFBF7]/50 border border-[#222222] hover:bg-[#FDFBF7] hover:text-black hover:border-[#FDFBF7] px-6 py-3 text-xs font-bold uppercase tracking-widest transition-colors duration-200"
+  >
+    Watch
+  </a>
+</div>
+ </div>
+ </div>
+      <!-- Centered Film Stills Button -->
+  <div class="w-full flex justify-center pt-14">
+    <a href="#comfort-stills" class="inline-block bg-[#19181A] text-[#FDFBF7]/50 border border-[#222222] hover:bg-[#FDFBF7] hover:text-black hover:border-[#FDFBF7] px-12 py-3 text-xs font-bold uppercase tracking-widest transition-colors duration-200">
+      Film Stills
+    </a>
+  </div>
+</div> <!-- Close project-card -->
 
         <!-- Project 5: the luck he left behind -->
-        <div class="project-card grid md:grid-cols-2 gap-12 items-start">
+        <div id="the-luck-he-left-behind" class="project-card flex flex-col items-center">
+  <div class="grid md:grid-cols-2 gap-12 items-center w-full">
             <img src="the_luck_he_left_behind.png" alt="the luck he left behind" class="w-full shadow-lg">
             <div class="space-y-4">
                 <p class="text-3xl font-bold text-[#FDFBF7]/60">2023</p>
                 <h3 class="text-4xl italic">the luck he left behind</h3>
                 <p class="text-sm font-semibold uppercase tracking-widest border-b border-[#222222] pb-2">Presented by DPA, Sunway University</p>
                 <p class="text-[#FDFBF7]/80 leading-relaxed font-light">A student documentary film discovering the impressions, memories, and impact of Kelvin Wong, the founder of Theatresauce, and the former Program Leader of Sunway University Diploma in Performing Arts.</p>
-                <div class="pt-4">
-                    <p class="font-bold text-sm uppercase">Roles:</p>
-                    <p class="text-[#FDFBF7]/80 italic">Assistant Director, Camera Assistant</p>
-                </div>
-                <div class="pt-6">
-                    <a href="https://drive.google.com/file/d/1IHWoOtUbitCBrkpTwoFYpJThcwN7c5cx/view" target="_blank" class="bg-[#19181A] text-[#FDFBF7]/50 border border-[#222222] px-8 py-3 text-xs uppercase tracking-widest font-bold hover:bg-[#FDFBF7] hover:text-[#0C0C0C] transition-all">Watch</a>
-                </div>
-            </div>
-        </div>
+                <div class="pt-4 flex justify-between items-end">
+  <div>
+    <p class="font-bold text-sm uppercase">Roles:</p>
+    <p class="text-[#FDFBF7]/80 italic">Assistant Director, Camera Assistant</p>
+  </div>
+  <a 
+    href="https://youtu.be/clwsRAv-S_Q" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    class="inline-block bg-[#19181A] text-[#FDFBF7]/50 border border-[#222222] hover:bg-[#FDFBF7] hover:text-black hover:border-[#FDFBF7] px-6 py-3 text-xs font-bold uppercase tracking-widest transition-colors duration-200"
+  >
+    Watch
+  </a>
+</div>
+     </div>
+      </div> <!-- Close grid -->
+
+  <!-- Centered Film Stills Button -->
+  <div class="w-full flex justify-center pt-14">
+    <a href="#luck-stills" class="inline-block bg-[#19181A] text-[#FDFBF7]/50 border border-[#222222] hover:bg-[#FDFBF7] hover:text-black hover:border-[#FDFBF7] px-12 py-3 text-xs font-bold uppercase tracking-widest transition-colors duration-200">
+      Film Stills
+    </a>
+  </div>
+</div> <!-- Close project-card -->
 
         <!-- Project 6: The Fabulous Secret of Arowana -->
       <div id="arowana" class="project-card flex flex-col items-center">
