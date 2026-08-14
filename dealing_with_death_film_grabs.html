@@ -60,42 +60,45 @@
   <!-- ==================== MAIN CONTENT ==================== -->
   <main class="max-w-7xl mx-auto px-6 py-12 flex-grow w-full">
 
-    <!-- Scaled Poster (Right-aligned inside column to move closer to text) -->
-  <div class="flex justify-center md:justify-end w-full">
-    <img 
-      src="dealing_with_death_poster.png" 
-      alt="Dealing with Death Poster" 
-      onclick="openLightbox(this.src)"
-      class="w-full max-w-[55%] md:max-w-[65%] shadow-2xl object-contain border border-[#222222] cursor-pointer hover:opacity-90 transition-opacity"
-    />
-  </div>
-
-  <!-- Text & Crew Information (Left-aligned inside column) -->
-  <div class="space-y-4 text-left">
-    <div>
-      <p class="text-2xl font-bold text-[#FDFBF7]/60">2026</p>
-      <h1 class="serif text-4xl italic font-bold tracking-tight mt-1">Dealing with Death</h1>
-      <p class="text-xs font-semibold uppercase tracking-widest text-[#FDFBF7]/60 mt-1">Presented by USW BA Film</p>
-    </div>
-
-    <!-- Crew List Block -->
-    <div class="pt-3 border-t border-[#222222] space-y-1.5 text-xs">
-      <p class="text-xs font-bold uppercase tracking-widest text-[#FDFBF7]/50 pb-1">Main Crew</p>
+   <!-- Top Section: Poster & Film/Crew Details (Locked Width & Centered) -->
+    <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 pb-12 border-b border-[#222222] max-w-4xl mx-auto">
       
-      <div class="grid grid-cols-1 gap-y-1.5 text-[#FDFBF7]/90 leading-relaxed">
-        <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Producer:</span> <span class="font-normal italic text-[#FDFBF7]/80">Melissa Taylor</span></p>
-        <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Director:</span> <span class="font-normal italic text-[#FDFBF7]/80">Austin Wong</span></p>
-        <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Screenwriter:</span> <span class="font-normal italic text-[#FDFBF7]/80">Rhys Evans</span></p>
-        <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Cinematographer:</span> <span class="font-normal italic text-[#FDFBF7]/80">Toby Huckett</span></p>
-        <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Sound Supervisor:</span> <span class="font-normal italic text-[#FDFBF7]/80">Alex Howells</span></p>
-        <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Editor:</span> <span class="font-normal italic text-[#FDFBF7]/80">Jacob Lewis</span></p>
-        <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Colourist:</span> <span class="font-normal italic text-[#FDFBF7]/80">Toby Huckett</span></p>
-        <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Production Designers:</span> <span class="font-normal italic text-[#FDFBF7]/80">Abigail Read, Ethan Wyn Roberts, Clareece Saysell</span></p>
+      <!-- Fixed Scaled Poster -->
+      <div class="flex-shrink-0 flex justify-center">
+        <img 
+          src="dealing_with_death_poster.png" 
+          alt="Dealing with Death Poster" 
+          onclick="openLightbox(this.src)"
+          class="w-[260px] md:w-[280px] h-auto object-contain shadow-2xl rounded-sm border border-[#222222] cursor-pointer hover:opacity-90 transition-opacity"
+        />
       </div>
-    </div>
-  </div>
 
-</div>
+      <!-- Text & Crew Information -->
+      <div class="space-y-4 max-w-md">
+        <div>
+          <p class="text-2xl font-bold text-[#FDFBF7]/60">2026</p>
+          <h1 class="serif text-4xl italic font-bold tracking-tight mt-1">Dealing with Death</h1>
+          <p class="text-xs font-semibold uppercase tracking-widest text-[#FDFBF7]/60 mt-1">Presented by USW BA Film</p>
+        </div>
+
+        <!-- Crew List Block -->
+        <div class="pt-3 border-t border-[#222222] space-y-1.5 text-xs">
+          <p class="text-xs font-bold uppercase tracking-widest text-[#FDFBF7]/50 pb-1">Main Crew</p>
+          
+          <div class="grid grid-cols-1 gap-y-1.5 text-[#FDFBF7]/90 leading-relaxed">
+            <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Producer:</span> <span class="font-normal italic text-[#FDFBF7]/80">Melissa Taylor</span></p>
+            <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Director:</span> <span class="font-normal italic text-[#FDFBF7]/80">Austin Wong</span></p>
+            <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Screenwriter:</span> <span class="font-normal italic text-[#FDFBF7]/80">Rhys Evans</span></p>
+            <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Cinematographer:</span> <span class="font-normal italic text-[#FDFBF7]/80">Toby Huckett</span></p>
+            <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Sound Supervisor:</span> <span class="font-normal italic text-[#FDFBF7]/80">Alex Howells</span></p>
+            <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Editor:</span> <span class="font-normal italic text-[#FDFBF7]/80">Jacob Lewis</span></p>
+            <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Colourist:</span> <span class="font-normal italic text-[#FDFBF7]/80">Toby Huckett</span></p>
+            <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Production Designers:</span> <span class="font-normal italic text-[#FDFBF7]/80">Abigail Read, Ethan Wyn Roberts, Clareece Saysell</span></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
 
     <!-- ==================== 5 ROWS x 4 COLUMNS GALLERY GRID ==================== -->
     <div class="pt-14 w-full">
