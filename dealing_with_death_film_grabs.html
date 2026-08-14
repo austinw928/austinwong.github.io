@@ -1,39 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" type="image/png" href="austinwong_pavicon.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dealing with Death - Film Grabs | Austin Wong</title>
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      background-color: #0c0c0d;
-      color: #FDFBF7;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    }
+    body { font-family: 'Inter', sans-serif; background-color: #0C0C0C; color: #FDFBF7; scroll-behavior: smooth; }
+    h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
   </style>
 </head>
 <body class="min-h-screen flex flex-col justify-between">
 
-  <!-- ==================== HEADER / NAV ==================== -->
-  <header class="bg-black text-[#FDFBF7] border-b border-[#222222] px-6 py-4 sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto flex justify-between items-center">
+  <!-- ==================== NAVIGATION BAR ==================== -->
+  <nav class="sticky top-0 z-50 bg-[#0C0C0C]/95 backdrop-blur-md border-b border-[#222222] text-[#FDFBF7] uppercase tracking-widest font-bold">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
       
-      <!-- Site Logo / Name -->
-      <a href="index.html" class="flex items-center gap-2 text-xl font-bold tracking-wider uppercase hover:opacity-80 transition-opacity">
-        <span>🎬</span> AUSTIN WONG
+      <!-- Logo / Name -->
+      <a href="index.html" class="flex items-center gap-2 text-xl font-bold tracking-wider hover:opacity-80 transition-opacity">
+        <img src="austinwong_pavicon.png" alt="Logo" class="w-6 h-6 object-contain">
+        <span>Austin Wong</span>
       </a>
 
-      <!-- Navigation Links -->
-      <nav class="hidden md:flex items-center space-x-8 text-sm">
+      <!-- Desktop Navigation Links -->
+      <div class="hidden md:flex items-center space-x-8 text-sm">
         <a href="index.html" class="hover:opacity-50 transition-opacity">Home</a>
         <a href="films.html" class="hover:opacity-50 transition-opacity">Films</a>
         <a href="acting.html" class="hover:opacity-50 transition-opacity">Performances</a>
 
         <!-- FILM GRAB DROPDOWN -->
         <div class="relative group flex items-center">
-          <button class="flex items-center gap-1 hover:opacity-50 transition-opacity focus:outline-none">
+          <button class="flex items-center gap-1 hover:opacity-50 transition-opacity focus:outline-none uppercase font-bold text-sm tracking-widest">
             Film Grab
             <svg class="w-3 h-3 fill-current transition-transform group-hover:rotate-180" viewBox="0 0 20 20">
               <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/>
@@ -41,97 +40,99 @@
           </button>
 
           <!-- Dropdown List -->
-          <div class="absolute left-0 top-full hidden group-hover:block bg-[#19181A] text-[#FDFBF7] border border-[#222222] min-w-[230px] shadow-2xl z-50 py-2 transition-all mt-2">
-            <a href="dealing_with_death_film_grabs.html" class="block px-4 py-2.5 text-xs tracking-wider bg-[#FDFBF7] text-black font-semibold">Dealing with Death</a>
-            <a href="bench_film_grabs.html" class="block px-4 py-2.5 text-xs tracking-wider hover:bg-[#FDFBF7] hover:text-black transition-colors">The Bench</a>
-            <a href="promise_again_film_grabs.html" class="block px-4 py-2.5 text-xs tracking-wider hover:bg-[#FDFBF7] hover:text-black transition-colors">Promise, again</a>
-            <a href="candle_film_grabs.html" class="block px-4 py-2.5 text-xs tracking-wider hover:bg-[#FDFBF7] hover:text-black transition-colors">The Candle</a>
-            <a href="comfort_in_discomfort_film_grabs.html" class="block px-4 py-2.5 text-xs tracking-wider hover:bg-[#FDFBF7] hover:text-black transition-colors">Comfort in Discomfort</a>
-            <a href="luck_he_left_behind_film_grabs.html" class="block px-4 py-2.5 text-xs tracking-wider hover:bg-[#FDFBF7] hover:text-black transition-colors">the luck he left behind</a>
-            <a href="arowana_film_grabs.html" class="block px-4 py-2.5 text-xs tracking-wider hover:bg-[#FDFBF7] hover:text-black transition-colors">The Fabulous Secret of Arowana</a>
+          <div class="absolute left-0 top-full hidden group-hover:block bg-[#19181A] text-[#FDFBF7] border border-[#222222] min-w-[240px] shadow-2xl z-50 py-2 normal-case tracking-normal font-normal">
+            <a href="dealing_with_death_film_grabs.html" class="block px-4 py-2.5 text-xs bg-[#FDFBF7] text-black font-semibold">Dealing with Death</a>
+            <a href="bench_film_grabs.html" class="block px-4 py-2.5 text-xs hover:bg-[#FDFBF7] hover:text-black transition-colors">The Bench</a>
+            <a href="promise_again_film_grabs.html" class="block px-4 py-2.5 text-xs hover:bg-[#FDFBF7] hover:text-black transition-colors">Promise, again</a>
+            <a href="candle_film_grabs.html" class="block px-4 py-2.5 text-xs hover:bg-[#FDFBF7] hover:text-black transition-colors">The Candle</a>
+            <a href="comfort_in_discomfort_film_grabs.html" class="block px-4 py-2.5 text-xs hover:bg-[#FDFBF7] hover:text-black transition-colors">Comfort in Discomfort</a>
+            <a href="luck_he_left_behind_film_grabs.html" class="block px-4 py-2.5 text-xs hover:bg-[#FDFBF7] hover:text-black transition-colors">the luck he left behind</a>
+            <a href="arowana_film_grabs.html" class="block px-4 py-2.5 text-xs hover:bg-[#FDFBF7] hover:text-black transition-colors">The Fabulous Secret of Arowana</a>
           </div>
         </div>
 
         <a href="#contact" class="hover:opacity-50 transition-opacity">Contact</a>
-      </nav>
+      </div>
 
     </div>
-  </header>
+  </nav>
 
   <!-- ==================== MAIN CONTENT ==================== -->
-  <main class="max-w-6xl mx-auto px-6 py-12 flex-grow w-full">
+  <main class="max-w-7xl mx-auto px-6 py-12 flex-grow w-full">
 
     <!-- Top Section: Poster & Film/Crew Details -->
     <div class="grid md:grid-cols-2 gap-12 items-center pb-12 border-b border-[#222222]">
       
-      <!-- Clickable Poster -->
+      <!-- Scaled Poster -->
       <div class="flex justify-center w-full">
         <img 
-          src="dealing_with_death_poster.png" 
+          src="dealing_with_death_film_grabs/dealing_with_death_poster.png" 
           alt="Dealing with Death Poster" 
           onclick="openLightbox(this.src)"
-          class="w-full max-w-[70%] md:max-w-[80%] shadow-2xl object-contain border border-[#1f1f1f] cursor-pointer hover:opacity-90 transition-opacity"
+          class="w-full max-w-[50%] md:max-w-[55%] shadow-2xl object-contain border border-[#222222] cursor-pointer hover:opacity-90 transition-opacity"
         />
       </div>
 
       <!-- Text & Crew Information -->
-      <div class="space-y-6">
+      <div class="space-y-4">
         <div>
-          <p class="text-3xl font-bold text-[#FDFBF7]/60">2026</p>
-          <h1 class="text-4xl italic font-serif tracking-tight mt-1">Dealing with Death</h1>
+          <p class="text-2xl font-bold text-[#FDFBF7]/60">2026</p>
+          <h1 class="serif text-4xl italic font-bold tracking-tight mt-1">Dealing with Death</h1>
           <p class="text-xs font-semibold uppercase tracking-widest text-[#FDFBF7]/60 mt-1">Presented by USW BA Film</p>
         </div>
 
         <!-- Crew List Block -->
-        <div class="pt-2 border-t border-[#222222]/80 space-y-2 text-sm">
+        <div class="pt-3 border-t border-[#222222] space-y-1.5 text-xs">
           <p class="text-xs font-bold uppercase tracking-widest text-[#FDFBF7]/50 pb-1">Main Crew</p>
           
-          <div class="grid grid-cols-1 gap-y-1.5 font-light text-[#FDFBF7]/85">
-            <p><span class="font-medium text-[#FDFBF7]">Producer:</span> Melissa Taylor</p>
-            <p><span class="font-medium text-[#FDFBF7]">Director:</span> Austin Wong</p>
-            <p><span class="font-medium text-[#FDFBF7]">Screenwriter:</span> Rhys Evans</p>
-            <p><span class="font-medium text-[#FDFBF7]">Cinematographer:</span> Toby Huckett</p>
-            <p><span class="font-medium text-[#FDFBF7]">Sound Supervisor:</span> Alex Howells</p>
-            <p><span class="font-medium text-[#FDFBF7]">Editor:</span> Jacob Lewis</p>
-            <p><span class="font-medium text-[#FDFBF7]">Colourist:</span> Toby Huckett</p>
-            <p><span class="font-medium text-[#FDFBF7]">Production Designers:</span> Abigail Read, Ethan Wyn Roberts, Clareece Saysell</p>
+          <div class="grid grid-cols-1 gap-y-1.5 text-[#FDFBF7]/90 leading-relaxed">
+            <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Producer:</span> <span class="font-normal italic text-[#FDFBF7]/80">Melissa Taylor</span></p>
+            <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Director:</span> <span class="font-normal italic text-[#FDFBF7]/80">Austin Wong</span></p>
+            <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Screenwriter:</span> <span class="font-normal italic text-[#FDFBF7]/80">Rhys Evans</span></p>
+            <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Cinematographer:</span> <span class="font-normal italic text-[#FDFBF7]/80">Toby Huckett</span></p>
+            <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Sound Supervisor:</span> <span class="font-normal italic text-[#FDFBF7]/80">Alex Howells</span></p>
+            <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Editor:</span> <span class="font-normal italic text-[#FDFBF7]/80">Jacob Lewis</span></p>
+            <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Colourist:</span> <span class="font-normal italic text-[#FDFBF7]/80">Toby Huckett</span></p>
+            <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Production Designers:</span> <span class="font-normal italic text-[#FDFBF7]/80">Abigail Read, Ethan Wyn Roberts, Clareece Saysell</span></p>
           </div>
         </div>
       </div>
 
     </div>
 
-    <!-- ==================== 4x5 STILLS GALLERY GRID ==================== -->
-    <div class="pt-12">
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+    <!-- ==================== 5 ROWS x 4 COLUMNS GALLERY GRID ==================== -->
+    <div class="pt-14 w-full">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 w-full">
         
         <!-- Row 1 -->
-        <img src="dwd_grab_1.png" alt="Grab 1" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
-        <img src="dwd_grab_2.png" alt="Grab 2" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
-        <img src="dwd_grab_3.png" alt="Grab 3" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
-        <img src="dwd_grab_4.png" alt="Grab 4" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
-        <img src="dwd_grab_5.png" alt="Grab 5" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
+        <img src="dealing_with_death_film_grabs/dwd_grab_1.png" alt="Grab 1" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
+        <img src="dealing_with_death_film_grabs/dwd_grab_2.png" alt="Grab 2" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
+        <img src="dealing_with_death_film_grabs/dwd_grab_3.png" alt="Grab 3" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
+        <img src="dealing_with_death_film_grabs/dwd_grab_4.png" alt="Grab 4" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
 
         <!-- Row 2 -->
-        <img src="dwd_grab_6.png" alt="Grab 6" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
-        <img src="dwd_grab_7.png" alt="Grab 7" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
-        <img src="dwd_grab_8.png" alt="Grab 8" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
-        <img src="dwd_grab_9.png" alt="Grab 9" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
-        <img src="dwd_grab_10.png" alt="Grab 10" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
+        <img src="dealing_with_death_film_grabs/dwd_grab_5.png" alt="Grab 5" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
+        <img src="dealing_with_death_film_grabs/dwd_grab_6.png" alt="Grab 6" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
+        <img src="dealing_with_death_film_grabs/dwd_grab_7.png" alt="Grab 7" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
+        <img src="dealing_with_death_film_grabs/dwd_grab_8.png" alt="Grab 8" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
 
         <!-- Row 3 -->
-        <img src="dwd_grab_11.png" alt="Grab 11" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
-        <img src="dwd_grab_12.png" alt="Grab 12" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
-        <img src="dwd_grab_13.png" alt="Grab 13" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
-        <img src="dwd_grab_14.png" alt="Grab 14" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
-        <img src="dwd_grab_15.png" alt="Grab 15" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
+        <img src="dealing_with_death_film_grabs/dwd_grab_9.png" alt="Grab 9" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
+        <img src="dealing_with_death_film_grabs/dwd_grab_10.png" alt="Grab 10" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
+        <img src="dealing_with_death_film_grabs/dwd_grab_11.png" alt="Grab 11" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
+        <img src="dealing_with_death_film_grabs/dwd_grab_12.png" alt="Grab 12" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
 
         <!-- Row 4 -->
-        <img src="dwd_grab_16.png" alt="Grab 16" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
-        <img src="dwd_grab_17.png" alt="Grab 17" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
-        <img src="dwd_grab_18.png" alt="Grab 18" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
-        <img src="dwd_grab_19.png" alt="Grab 19" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
-        <img src="dwd_grab_20.png" alt="Grab 20" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
+        <img src="dealing_with_death_film_grabs/dwd_grab_13.png" alt="Grab 13" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
+        <img src="dealing_with_death_film_grabs/dwd_grab_14.png" alt="Grab 14" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
+        <img src="dealing_with_death_film_grabs/dwd_grab_15.png" alt="Grab 15" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
+        <img src="dealing_with_death_film_grabs/dwd_grab_16.png" alt="Grab 16" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
+
+        <!-- Row 5 -->
+        <img src="dealing_with_death_film_grabs/dwd_grab_17.png" alt="Grab 17" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
+        <img src="dealing_with_death_film_grabs/dwd_grab_18.png" alt="Grab 18" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
+        <img src="dealing_with_death_film_grabs/dwd_grab_19.png" alt="Grab 19" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
+        <img src="dealing_with_death_film_grabs/dwd_grab_20.png" alt="Grab 20" onclick="openLightbox(this.src)" class="w-full aspect-video object-cover rounded-sm cursor-pointer hover:scale-[1.02] hover:opacity-90 transition-all border border-[#1a1a1a]" loading="lazy">
 
       </div>
     </div>
@@ -153,7 +154,7 @@
       ✕
     </button>
 
-    <!-- Full Image Container -->
+    <!-- Full Image Preview Container -->
     <div class="relative max-w-5xl max-h-[90vh] flex items-center justify-center">
       <img 
         id="lightboxImage" 
@@ -178,23 +179,21 @@
     function openLightbox(imageSrc) {
       modalImg.src = imageSrc;
       modal.classList.remove('hidden');
-      document.body.style.overflow = 'hidden'; // Prevent background scrolling
+      document.body.style.overflow = 'hidden';
     }
 
     function forceCloseLightbox() {
       modal.classList.add('hidden');
       modalImg.src = '';
-      document.body.style.overflow = 'auto'; // Restore background scrolling
+      document.body.style.overflow = 'auto';
     }
 
     function closeLightbox(event) {
-      // Close if user clicks outside the image container
       if (event.target === modal) {
         forceCloseLightbox();
       }
     }
 
-    // Close on Escape key press
     document.addEventListener('keydown', function(event) {
       if (event.key === 'Escape' && !modal.classList.contains('hidden')) {
         forceCloseLightbox();
