@@ -74,49 +74,62 @@
   <!-- ==================== MAIN CONTENT ==================== -->
   <main class="max-w-7xl mx-auto px-6 py-12 flex-grow w-full">
 
-   <!-- Top Section: Poster & Film/Crew Details (Locked Width & Centered) -->
-    <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 pb-12 border-b border-[#222222] max-w-4xl mx-auto">
+ <!-- Top Section: Landscape Poster & 2-Column Side-by-Side Crew Details -->
+    <div class="flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-14 pb-12 border-b border-[#222222] max-w-6xl mx-auto">
       
-      <!-- Fixed Scaled Poster -->
+      <!-- Larger Landscape Poster -->
       <div class="flex-shrink-0 flex justify-center">
         <img 
-          src="the_bench.png" 
+          src="the_bench_film_grabs/the_bench_poster.png" 
           alt="The Bench Poster" 
           onclick="openLightbox(this.src)"
-          class="w-[260px] md:w-[280px] h-auto object-contain shadow-2xl rounded-sm border border-[#222222] cursor-pointer hover:opacity-90 transition-opacity"
+          class="w-[360px] md:w-[420px] lg:w-[450px] h-auto object-contain shadow-2xl rounded-sm border border-[#222222] cursor-pointer hover:opacity-90 transition-opacity"
         />
       </div>
 
-      <!-- Text & Crew Information -->
-      <div class="space-y-4 max-w-xl">
+      <!-- Text & 2-Column Crew Information -->
+      <div class="space-y-4 w-full max-w-2xl">
         <div>
           <p class="text-2xl font-bold text-[#FDFBF7]/60">2026</p>
           <h1 class="serif text-4xl italic font-bold tracking-tight mt-1">The Bench</h1>
-          <p class="text-xs font-semibold uppercase tracking-widest text-[#FDFBF7]/60 mt-1">Presented by Darwin Rao from USW BA Performance and Media</p>
+          <p class="text-xs font-semibold uppercase tracking-widest text-[#FDFBF7]/60 mt-1">
+            PRESENTED BY DARWIN RAO FROM USW BA PERFORMANCE AND MEDIA
+          </p>
         </div>
 
-        <!-- Crew List Block -->
-        <div class="pt-3 border-t border-[#222222] space-y-1.5 text-xs">
+        <!-- Crew Section Block -->
+        <div class="pt-3 border-t border-[#222222] space-y-2 text-xs">
           <p class="text-xs font-bold uppercase tracking-widest text-[#FDFBF7]/50 pb-1">Main Crew</p>
           
-          <div class="grid grid-cols-1 gap-y-1.5 text-[#FDFBF7]/90 leading-relaxed">
-            <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Producer:</span> <span class="font-normal italic text-[#FDFBF7]/80">Darwin Rao</span></p>
-            <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Director:</span> <span class="font-normal italic text-[#FDFBF7]/80">Darwin Rao</span></p>
-            <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Screenwriter:</span> <span class="font-normal italic text-[#FDFBF7]/80">Darwin Rao</span></p>
-            <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">1st Assistant Director:</span> <span class="font-normal italic text-[#FDFBF7]/80">Josh</span></p>
-            <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">2nd Assistant DIrector:</span> <span class="font-normal italic text-[#FDFBF7]/80">Austin Wong</span></p>
-            <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Cinematographer:</span> <span class="font-normal italic text-[#FDFBF7]/80">Glenn Dmello</span></p>
-            <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Camera Assistant:</span> <span class="font-normal italic text-[#FDFBF7]/80">Joel George</span></p>
-            <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Editor:</span> <span class="font-normal italic text-[#FDFBF7]/80">Darwin Rao, Sharvin</span></p>
-            <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Colourist:</span> <span class="font-normal italic text-[#FDFBF7]/80">Sharvin</span></p>
-            <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Sound Engineer:</span> <span class="font-normal italic text-[#FDFBF7]/80">Soham Sindulkar</span></p>
-            <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Sound Design:</span> <span class="font-normal italic text-[#FDFBF7]/80">Yugadevan Vasudevan</span></p>
-            <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Music Design:</span> <span class="font-normal italic text-[#FDFBF7]/80">Aadesh Deshkmukh</span></p>
+          <!-- 2 Columns Grid: Column 1 & Column 2 Align Top -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-1.5 text-[#FDFBF7]/90 leading-relaxed items-start">
+            
+            <!-- Column 1 -->
+            <div class="space-y-1.5">
+              <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Producer:</span> <span class="font-normal italic text-[#FDFBF7]/80">Darwin Rao</span></p>
+              <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Director:</span> <span class="font-normal italic text-[#FDFBF7]/80">Darwin Rao</span></p>
+              <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Screenwriter:</span> <span class="font-normal italic text-[#FDFBF7]/80">Darwin Rao</span></p>
+              <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">1st Assistant Director:</span> <span class="font-normal italic text-[#FDFBF7]/80">Josh</span></p>
+              <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">2nd Assistant Director:</span> <span class="font-normal italic text-[#FDFBF7]/80">Austin Wong</span></p>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="space-y-1.5">
+              <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Cinematographer:</span> <span class="font-normal italic text-[#FDFBF7]/80">Glenn Dmello</span></p>
+              <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Camera Assistant:</span> <span class="font-normal italic text-[#FDFBF7]/80">Joel George</span></p>
+              <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Editor:</span> <span class="font-normal italic text-[#FDFBF7]/80">Darwin Rao, Sharvin</span></p>
+              <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Colourist:</span> <span class="font-normal italic text-[#FDFBF7]/80">Sharvin</span></p>
+              <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Sound Engineer:</span> <span class="font-normal italic text-[#FDFBF7]/80">Soham Sindulkar</span></p>
+              <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Sound Design:</span> <span class="font-normal italic text-[#FDFBF7]/80">Yugadevan Vasudevan</span></p>
+              <p><span class="font-bold uppercase tracking-wider text-[#FDFBF7]">Music Design:</span> <span class="font-normal italic text-[#FDFBF7]/80">Aadesh Deshkmukh</span></p>
+            </div>
+
           </div>
         </div>
       </div>
 
     </div>
+    
 
     <!-- ==================== 5 ROWS x 4 COLUMNS GALLERY GRID ==================== -->
     <div class="pt-14 w-full">
