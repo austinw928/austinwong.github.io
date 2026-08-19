@@ -26,7 +26,7 @@
       </a>
 
       <!-- Desktop Nav Links -->
-      <div class="hidden md:flex items-center space-x-12 text-sm">
+      <div class="hidden md:flex items-center space-x-8 text-sm">
         <a href="index.html" class="hover:opacity-50 transition-opacity">HOME</a>
         <a href="films.html" class="hover:opacity-50 transition-opacity">FILMS</a>
         <a href="acting.html" class="hover:opacity-50 transition-opacity">PERFORMANCES</a>
@@ -54,6 +54,23 @@
         <a href="creative_lab.html" class="text-white border-b border-[#FDFBF7] pb-1">CREATIVE LAB</a>
         <a href="index.html#contact" class="hover:opacity-50 transition-opacity">CONTACT</a>
       </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="menu-btn" class="block md:hidden text-[#FDFBF7] focus:outline-none pr-4" aria-label="Toggle Navigation">
+        <svg class="w-6 h-6 fill-none stroke-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-[#222222] bg-[#0C0C0C] px-6 py-6 flex flex-col space-y-4 text-center text-base">
+      <a href="index.html" class="hover:opacity-50 transition-opacity py-2">Home</a>
+      <a href="films.html" class="hover:opacity-50 transition-opacity py-2">Films</a>
+      <a href="acting.html" class="hover:opacity-50 transition-opacity py-2">Performances</a>
+      <a href="photography.html" class="hover:opacity-50 transition-opacity py-2">Photography</a>
+      <a href="creative_lab.html" class="hover:opacity-50 transition-opacity py-2">Creative Lab</a>
+      <a href="index.html#contact" class="hover:opacity-50 transition-opacity py-2">Contact</a>
     </div>
   </nav>
 
@@ -62,45 +79,62 @@
     <h1 class="serif text-4xl md:text-5xl italic font-bold tracking-widest text-[#FDFBF7] uppercase">
       CREATIVE LAB
     </h1>
-    <p class="text-xs md:text-sm text-[#FDFBF7]/60 tracking-widest uppercase mt-2">
-      Generative AI Visual Development & Environmental Plate Iteration
-    </p>
   </div>
 
   <!-- Main Content Area -->
-  <main class="max-w-6xl mx-auto px-6 py-16 space-y-20 w-full">
+  <main class="max-w-6xl mx-auto px-6 py-16 space-y-24 w-full">
 
-    <!-- PROJECT HEADER & JOURNAL STATEMENT -->
-    <section class="space-y-6 border-b border-[#222222] pb-12">
-      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
-        <div>
-          <p class="text-sm font-semibold tracking-widest text-[#FDFBF7]/60 uppercase">2025 Commercial Project</p>
-          <h2 class="serif text-3xl md:text-4xl font-normal tracking-tight mt-1 text-[#FDFBF7]">
-            Maxkleen 9 Washing Detergent Commercial
-          </h2>
-          <p class="text-xs font-medium uppercase tracking-wider text-[#FDFBF7]/50 mt-1">
-            Produced by 94Henn &bull; Role: Generative AI Environment Plate Prompting & Iteration
-          </p>
+    <!-- PROJECT SECTION (Films/Performances Side-by-Side Layout) -->
+    <section class="space-y-12 border-b border-[#222222] pb-16">
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left Column: Poster Thumbnail & Action Button -->
+        <div class="md:col-span-4 space-y-4">
+          <img 
+            src="maxkleen_video_thumbnail.jpg" 
+            alt="Maxkleen 9 Commercial Reel Thumbnail" 
+            class="w-full aspect-[9/16] object-cover rounded-sm border border-[#222222] shadow-xl"
+          >
+          <a 
+            href="https://www.instagram.com/reel/DKGmbbAScT3/?hl=en-gb" 
+            target="_blank" 
+            class="w-full inline-flex items-center justify-center gap-2 border border-[#FDFBF7]/40 py-2.5 text-xs font-semibold uppercase tracking-widest hover:bg-[#FDFBF7] hover:text-black transition-all rounded-sm"
+          >
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            <span>Watch Final Reel</span>
+          </a>
         </div>
 
-        <!-- Instagram Reel Link Button -->
-        <a href="https://www.instagram.com/reel/DKGmbbAScT3/?hl=en-gb" target="_blank" class="inline-flex items-center gap-2 border border-[#FDFBF7]/40 px-5 py-2.5 text-xs font-semibold uppercase tracking-widest hover:bg-[#FDFBF7] hover:text-black transition-all rounded-sm flex-shrink-0">
-          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-          </svg>
-          <span>Watch Final Reel</span>
-        </a>
-      </div>
+        <!-- Right Column: Project Details & Production Context -->
+        <div class="md:col-span-8 space-y-6">
+          <div>
+            <p class="text-sm font-semibold tracking-widest text-[#FDFBF7]/60 uppercase">2025 Commercial Project</p>
+            <h2 class="serif text-3xl md:text-4xl font-normal tracking-tight mt-1 text-[#FDFBF7]">
+              Maxkleen 9 Washing Detergent Commercial Advertisement
+            </h2>
+            <p class="text-xs font-medium uppercase tracking-wider text-[#FDFBF7]/50 mt-1">
+              Produced by 94Henn &bull; Role: Video Editor with Generative AI Image Prompting and Iteration
+            </p>
+          </div>
 
-      <!-- Process Statement -->
-      <div class="bg-[#141414] border border-[#222222] p-6 rounded-sm text-sm text-[#FDFBF7]/80 leading-relaxed space-y-3">
-        <h3 class="text-xs uppercase tracking-widest text-[#FDFBF7] font-semibold">Production Context & Prompt Engineering Workflow</h3>
-        <p>
-          For this commercial advertisement, our objective was to visualize distinct historical Asian eras and periods that were impossible to construct physically on set within tight turnaround and budget parameters.
-        </p>
-        <p>
-          Tasked with generating high-resolution background plates for live-action green-screen compositing, I utilized film grammar—specifying 35mm full-frame perspectives, eye-level camera heights (1.5–1.7m), directional lighting angles, and Kelvin color temperatures. The prompts were intentionally structured to prevent digital distortion, control atmospheric depth, and maintain clear negative space for talent integration during post-production.
-        </p>
+          <!-- Production Statement -->
+          <div class="bg-[#141414] border border-[#222222] p-6 rounded-sm text-sm text-[#FDFBF7]/85 leading-relaxed space-y-4 font-light">
+            <h3 class="text-xs uppercase tracking-widest text-[#FDFBF7] font-semibold">Production Context & Prompt Workflow</h3>
+            <p>
+              During the production of this commercial advertisement, I was tasked with the objective to visualise distinct historical Asian settings and periods that were impossible to construct physically on set due to budget limitations and quick turnaround times.
+            </p>
+            <p>
+              To generate environmental plates suitable for green-screen compositing with live actors, I utilised standard film production terms in my prompt iterations—specifying a 35mm full-frame perspective, locked-off eye-level camera placement (1.5–1.7m), warm directional sunlight angles, and natural colour temperatures (3000K–4000K). I also made sure each composition retained clean negative foreground space so our talent could be keyed in naturally without clipping against busy background elements.
+            </p>
+            <p class="text-[#FDFBF7]/70 italic pt-1 border-t border-[#222222]">
+              Below are my raw, unedited prompt iterations used to generate three of the key background plates for this video project that I found particularly interesting and enjoyable to develop.
+            </p>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -108,12 +142,12 @@
     <section class="space-y-6">
       <div class="border-b border-[#222222] pb-3">
         <h3 class="serif text-2xl font-normal text-[#FDFBF7]">Plate 01: Historical Rural Chinese Bridge</h3>
-        <p class="text-xs tracking-wider uppercase text-[#FDFBF7]/50 mt-0.5">Ancient Village Riverbank &bull; Morning Light &bull; Green Screen Plate</p>
+        <p class="text-xs tracking-wider uppercase text-[#FDFBF7]/50 mt-0.5">Ancient Village Riverbank &bull; Morning Sunlight &bull; Green Screen Plate</p>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-        <!-- Image Preview -->
-        <div class="lg:col-span-5">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+        <!-- Image Preview (Refined Compact Scale) -->
+        <div class="md:col-span-4 max-w-[280px] mx-auto md:mx-0 w-full">
           <img 
             loading="lazy"
             decoding="async"
@@ -122,16 +156,16 @@
             alt="Historical Rural Chinese Bridge Plate" 
             class="w-full aspect-[2/3] object-cover rounded-sm border border-[#222222] cursor-pointer hover:opacity-85 transition-all shadow-xl"
           >
-          <p class="text-[11px] text-center text-[#FDFBF7]/40 mt-2 uppercase tracking-wider">Click image for fullscreen plate view</p>
+          <p class="text-[11px] text-center text-[#FDFBF7]/40 mt-2 uppercase tracking-wider">Click for fullscreen view</p>
         </div>
 
         <!-- Raw Working Prompt Terminal Box -->
-        <div class="lg:col-span-7 bg-[#141414] border border-[#222222] rounded-sm p-6 space-y-4">
+        <div class="md:col-span-8 bg-[#141414] border border-[#222222] rounded-sm p-6 space-y-4">
           <div class="flex items-center justify-between border-b border-[#222222] pb-3">
             <span class="text-xs uppercase tracking-widest font-semibold text-[#FDFBF7]">Raw Iterative Prompt Evidence</span>
             <span class="text-[10px] mono bg-[#222222] text-[#FDFBF7]/70 px-2 py-0.5 rounded">35mm &bull; Eye-Level &bull; Composite Space</span>
           </div>
-          <div class="mono text-xs text-[#FDFBF7]/75 leading-relaxed bg-[#0C0C0C] p-4 rounded border border-[#1f1f1f] max-h-[460px] overflow-y-auto whitespace-pre-wrap select-all selection:bg-[#FDFBF7] selection:text-black">"A photorealistic cinematic background of a quiet rural Chinese landscape with an old traditional stone bridge crossing a slow river. The setting should feel like ancient or historical China, natural and peaceful, rather than a fantasy environment.
+          <div class="mono text-xs text-[#FDFBF7]/75 leading-relaxed bg-[#0C0C0C] p-4 rounded border border-[#1f1f1f] max-h-[380px] overflow-y-auto whitespace-pre-wrap select-all selection:bg-[#FDFBF7] selection:text-black">"A photorealistic cinematic background of a quiet rural Chinese landscape with an old traditional stone bridge crossing a slow river. The setting should feel like ancient or historical China, natural and peaceful, rather than a fantasy environment.
 
 The foreground shows a shallow river with calm, gently moving water. Several large rectangular stone stepping stones cross part of the river in the foreground. The stones should look old, heavy and weathered, with slightly uneven surfaces and edges.
 
@@ -161,9 +195,9 @@ No people, no animals, no modern buildings, no cars, no electricity poles, no fa
         <p class="text-xs tracking-wider uppercase text-[#FDFBF7]/50 mt-0.5">Early Republican Period &bull; 3000K–4000K Lighting &bull; Composite Ready</p>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-        <!-- Image Preview -->
-        <div class="lg:col-span-5">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+        <!-- Image Preview (Refined Compact Scale) -->
+        <div class="md:col-span-4 max-w-[340px] mx-auto md:mx-0 w-full">
           <img 
             loading="lazy"
             decoding="async"
@@ -172,16 +206,16 @@ No people, no animals, no modern buildings, no cars, no electricity poles, no fa
             alt="Traditional Interior Plate" 
             class="w-full aspect-[3/2] object-cover rounded-sm border border-[#222222] cursor-pointer hover:opacity-85 transition-all shadow-xl"
           >
-          <p class="text-[11px] text-center text-[#FDFBF7]/40 mt-2 uppercase tracking-wider">Click image for fullscreen plate view</p>
+          <p class="text-[11px] text-center text-[#FDFBF7]/40 mt-2 uppercase tracking-wider">Click for fullscreen view</p>
         </div>
 
         <!-- Raw Working Prompt Terminal Box -->
-        <div class="lg:col-span-7 bg-[#141414] border border-[#222222] rounded-sm p-6 space-y-4">
+        <div class="md:col-span-8 bg-[#141414] border border-[#222222] rounded-sm p-6 space-y-4">
           <div class="flex items-center justify-between border-b border-[#222222] pb-3">
             <span class="text-xs uppercase tracking-widest font-semibold text-[#FDFBF7]">Raw Iterative Prompt Evidence</span>
             <span class="text-[10px] mono bg-[#222222] text-[#FDFBF7]/70 px-2 py-0.5 rounded">3000K–4000K &bull; Lattice Shadow &bull; 35mm</span>
           </div>
-          <div class="mono text-xs text-[#FDFBF7]/75 leading-relaxed bg-[#0C0C0C] p-4 rounded border border-[#1f1f1f] max-h-[380px] overflow-y-auto whitespace-pre-wrap select-all selection:bg-[#FDFBF7] selection:text-black">"A photorealistic cinematic background of a traditional Chinese interior, inspired by an old rural Chinese house from the late imperial or early Republican period. The room should feel simple, quiet, slightly old and lived-in rather than luxurious.
+          <div class="mono text-xs text-[#FDFBF7]/75 leading-relaxed bg-[#0C0C0C] p-4 rounded border border-[#1f1f1f] max-h-[340px] overflow-y-auto whitespace-pre-wrap select-all selection:bg-[#FDFBF7] selection:text-black">"A photorealistic cinematic background of a traditional Chinese interior, inspired by an old rural Chinese house from the late imperial or early Republican period. The room should feel simple, quiet, slightly old and lived-in rather than luxurious.
 
 The room has warm ochre plaster walls, dark aged wooden furniture and exposed wooden ceiling beams. On the back wall are three traditional Chinese calligraphy scrolls, with two old framed Chinese paintings on the left wall. Include a simple wooden bench in the middle of the room, an old wooden chair in the foreground on the left, and a small wooden side table on the right with a simple ceramic vase and a small plant.
 
@@ -209,9 +243,9 @@ No people, no modern objects, no fantasy elements, no excessive decoration, no o
         <p class="text-xs tracking-wider uppercase text-[#FDFBF7]/50 mt-0.5">Vertical 9:16 &bull; Southeast Asian Stilt House &bull; Daylight Composite</p>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-        <!-- Image Preview -->
-        <div class="lg:col-span-5">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+        <!-- Image Preview (Refined Compact Scale) -->
+        <div class="md:col-span-4 max-w-[280px] mx-auto md:mx-0 w-full">
           <img 
             loading="lazy"
             decoding="async"
@@ -220,16 +254,16 @@ No people, no modern objects, no fantasy elements, no excessive decoration, no o
             alt="1950s Malaysian Kampung Plate" 
             class="w-full aspect-[2/3] object-cover rounded-sm border border-[#222222] cursor-pointer hover:opacity-85 transition-all shadow-xl"
           >
-          <p class="text-[11px] text-center text-[#FDFBF7]/40 mt-2 uppercase tracking-wider">Click image for fullscreen plate view</p>
+          <p class="text-[11px] text-center text-[#FDFBF7]/40 mt-2 uppercase tracking-wider">Click for fullscreen view</p>
         </div>
 
         <!-- Raw Working Prompt Terminal Box -->
-        <div class="lg:col-span-7 bg-[#141414] border border-[#222222] rounded-sm p-6 space-y-4">
+        <div class="md:col-span-8 bg-[#141414] border border-[#222222] rounded-sm p-6 space-y-4">
           <div class="flex items-center justify-between border-b border-[#222222] pb-3">
             <span class="text-xs uppercase tracking-widest font-semibold text-[#FDFBF7]">Raw Iterative Prompt Evidence</span>
             <span class="text-[10px] mono bg-[#222222] text-[#FDFBF7]/70 px-2 py-0.5 rounded">9:16 Vertical &bull; 1950s Kampung &bull; Tropical Sun</span>
           </div>
-          <div class="mono text-xs text-[#FDFBF7]/75 leading-relaxed bg-[#0C0C0C] p-4 rounded border border-[#1f1f1f] max-h-[460px] overflow-y-auto whitespace-pre-wrap select-all selection:bg-[#FDFBF7] selection:text-black">"Create a photorealistic cinematic background of a quiet rural Malaysian fishing village beside a slow-moving river, inspired by the atmosphere of Southeast Asia in the 1950s. The scene should feel authentic, grounded and naturally lived-in, not fantasy or fairy-tale.
+          <div class="mono text-xs text-[#FDFBF7]/75 leading-relaxed bg-[#0C0C0C] p-4 rounded border border-[#1f1f1f] max-h-[380px] overflow-y-auto whitespace-pre-wrap select-all selection:bg-[#FDFBF7] selection:text-black">"Create a photorealistic cinematic background of a quiet rural Malaysian fishing village beside a slow-moving river, inspired by the atmosphere of Southeast Asia in the 1950s. The scene should feel authentic, grounded and naturally lived-in, not fantasy or fairy-tale.
 
 Use a vertical 9:16 composition with a relatively low camera position at approximately human eye level, looking straight toward the riverbank and surrounding village landscape. In the foreground, show a wide, natural dirt and grass clearing with plenty of open space for actors to be composited into the scene later. The river should sit in the middle-to-background of the composition rather than dominating the foreground.
 
@@ -276,6 +310,24 @@ Photorealistic cinematic environmental plate, authentic 1950s Malaysian kampung 
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') closeLightbox();
     });
+  </script>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    }
   </script>
 
   <!-- Footer -->
