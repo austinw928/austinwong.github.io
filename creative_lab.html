@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="austinwong_pavicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Lab | Austin Wong</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #0C0C0C; color: #FDFBF7; scroll-behavior: smooth; }
+    h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
+    .mono { font-family: 'Fira Code', monospace; }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between">
+
+  <!-- Header / Navigation Bar -->
+  <nav class="sticky top-0 z-50 bg-[#0C0C0C]/95 backdrop-blur-md border-b border-[#222222] text-[#FDFBF7] uppercase tracking-widest font-bold">
+    <div class="px-6 py-6 flex justify-between items-center">
+      
+      <!-- Logo & Name Link -->
+      <a href="index.html" class="text-base md:text-lg inline-flex items-center gap-2.5 text-[#FDFBF7] hover:opacity-80 transition-opacity pl-4">
+        <img src="austinwong_pavicon.png" alt="Logo" class="w-10 h-10 md:w-12 md:h-12 object-contain">
+        <span>AUSTIN WONG</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <div class="hidden md:flex items-center space-x-12 text-sm">
+        <a href="index.html" class="hover:opacity-50 transition-opacity">HOME</a>
+        <a href="films.html" class="hover:opacity-50 transition-opacity">FILMS</a>
+        <a href="acting.html" class="hover:opacity-50 transition-opacity">PERFORMANCES</a>
+        
+        <!-- FILM GRAB DROPDOWN -->
+        <div class="relative group flex items-center">
+          <button class="flex items-center gap-1 hover:opacity-50 transition-opacity focus:outline-none uppercase">
+            FILM GRAB
+            <svg class="w-3 h-3 fill-current transition-transform group-hover:rotate-180" viewBox="0 0 20 20">
+              <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/>
+            </svg>
+          </button>
+          
+          <div class="absolute left-0 top-full hidden group-hover:block bg-[#19181A] text-[#FDFBF7] border border-[#222222] min-w-[220px] shadow-xl z-50 py-2 transition-all font-normal">
+            <a href="dealing_with_death_film_grabs.html" class="block px-4 py-2.5 text-xs tracking-wider hover:bg-[#FDFBF7] hover:text-black transition-colors">Dealing with Death</a>
+            <a href="the_bench_film_grabs.html" class="block px-4 py-2.5 text-xs tracking-wider hover:bg-[#FDFBF7] hover:text-black transition-colors">The Bench</a>
+            <a href="promise_again_film_grabs.html" class="block px-4 py-2.5 text-xs tracking-wider hover:bg-[#FDFBF7] hover:text-black transition-colors">Promise, again</a>
+            <a href="the_candle_film_grabs.html" class="block px-4 py-2.5 text-xs tracking-wider hover:bg-[#FDFBF7] hover:text-black transition-colors">The Candle</a>
+            <a href="comfort_in_discomfort_film_grabs.html" class="block px-4 py-2.5 text-xs tracking-wider hover:bg-[#FDFBF7] hover:text-black transition-colors">Comfort in Discomfort</a>
+            <a href="the_luck_he_left_behind_film_grabs.html" class="block px-4 py-2.5 text-xs tracking-wider hover:bg-[#FDFBF7] hover:text-black transition-colors">the luck he left behind</a>
+            <a href="the_fabulous_secret_of_arowana_film_grabs.html" class="block px-4 py-2.5 text-xs tracking-wider hover:bg-[#FDFBF7] hover:text-black transition-colors">The Fabulous Secret of Arowana</a>
+          </div>
+        </div>
+
+        <a href="photography.html" class="hover:opacity-50 transition-opacity">PHOTOGRAPHY</a>
+        <a href="creative_lab.html" class="text-white border-b border-[#FDFBF7] pb-1">CREATIVE LAB</a>
+        <a href="index.html#contact" class="hover:opacity-50 transition-opacity">CONTACT</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Dark Grey Title Banner -->
+  <div class="bg-[#19181A] border-b border-[#222222] py-10 md:py-14 text-center">
+    <h1 class="serif text-4xl md:text-5xl italic font-bold tracking-widest text-[#FDFBF7] uppercase">
+      CREATIVE LAB
+    </h1>
+    <p class="text-xs md:text-sm text-[#FDFBF7]/60 tracking-widest uppercase mt-2">
+      Generative AI Visual Development & Environmental Plate Iteration
+    </p>
+  </div>
+
+  <!-- Main Content Area -->
+  <main class="max-w-6xl mx-auto px-6 py-16 space-y-20 w-full">
+
+    <!-- PROJECT HEADER & JOURNAL STATEMENT -->
+    <section class="space-y-6 border-b border-[#222222] pb-12">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <p class="text-sm font-semibold tracking-widest text-[#FDFBF7]/60 uppercase">2025 Commercial Project</p>
+          <h2 class="serif text-3xl md:text-4xl font-normal tracking-tight mt-1 text-[#FDFBF7]">
+            Maxkleen 9 Washing Detergent Commercial
+          </h2>
+          <p class="text-xs font-medium uppercase tracking-wider text-[#FDFBF7]/50 mt-1">
+            Produced by 94Henn &bull; Role: Generative AI Environment Plate Prompting & Iteration
+          </p>
+        </div>
+
+        <!-- Instagram Reel Link Button -->
+        <a href="https://www.instagram.com/reel/DKGmbbAScT3/?hl=en-gb" target="_blank" class="inline-flex items-center gap-2 border border-[#FDFBF7]/40 px-5 py-2.5 text-xs font-semibold uppercase tracking-widest hover:bg-[#FDFBF7] hover:text-black transition-all rounded-sm flex-shrink-0">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+          <span>Watch Final Reel</span>
+        </a>
+      </div>
+
+      <!-- Process Statement -->
+      <div class="bg-[#141414] border border-[#222222] p-6 rounded-sm text-sm text-[#FDFBF7]/80 leading-relaxed space-y-3">
+        <h3 class="text-xs uppercase tracking-widest text-[#FDFBF7] font-semibold">Production Context & Prompt Engineering Workflow</h3>
+        <p>
+          For this commercial advertisement, our objective was to visualize distinct historical Asian eras and periods that were impossible to construct physically on set within tight turnaround and budget parameters.
+        </p>
+        <p>
+          Tasked with generating high-resolution background plates for live-action green-screen compositing, I utilized film grammar—specifying 35mm full-frame perspectives, eye-level camera heights (1.5–1.7m), directional lighting angles, and Kelvin color temperatures. The prompts were intentionally structured to prevent digital distortion, control atmospheric depth, and maintain clear negative space for talent integration during post-production.
+        </p>
+      </div>
+    </section>
+
+    <!-- CASE EVIDENCE 1: ANCIENT RURAL CHINA -->
+    <section class="space-y-6">
+      <div class="border-b border-[#222222] pb-3">
+        <h3 class="serif text-2xl font-normal text-[#FDFBF7]">Plate 01: Historical Rural Chinese Bridge</h3>
+        <p class="text-xs tracking-wider uppercase text-[#FDFBF7]/50 mt-0.5">Ancient Village Riverbank &bull; Morning Light &bull; Green Screen Plate</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <!-- Image Preview -->
+        <div class="lg:col-span-5">
+          <img 
+            loading="lazy"
+            decoding="async"
+            onclick="openLightbox(this.src)" 
+            src="maxkleen_video_bg_1.png" 
+            alt="Historical Rural Chinese Bridge Plate" 
+            class="w-full aspect-[2/3] object-cover rounded-sm border border-[#222222] cursor-pointer hover:opacity-85 transition-all shadow-xl"
+          >
+          <p class="text-[11px] text-center text-[#FDFBF7]/40 mt-2 uppercase tracking-wider">Click image for fullscreen plate view</p>
+        </div>
+
+        <!-- Raw Working Prompt Terminal Box -->
+        <div class="lg:col-span-7 bg-[#141414] border border-[#222222] rounded-sm p-6 space-y-4">
+          <div class="flex items-center justify-between border-b border-[#222222] pb-3">
+            <span class="text-xs uppercase tracking-widest font-semibold text-[#FDFBF7]">Raw Iterative Prompt Evidence</span>
+            <span class="text-[10px] mono bg-[#222222] text-[#FDFBF7]/70 px-2 py-0.5 rounded">35mm &bull; Eye-Level &bull; Composite Space</span>
+          </div>
+          <div class="mono text-xs text-[#FDFBF7]/75 leading-relaxed bg-[#0C0C0C] p-4 rounded border border-[#1f1f1f] max-h-[460px] overflow-y-auto whitespace-pre-wrap select-all selection:bg-[#FDFBF7] selection:text-black">"A photorealistic cinematic background of a quiet rural Chinese landscape with an old traditional stone bridge crossing a slow river. The setting should feel like ancient or historical China, natural and peaceful, rather than a fantasy environment.
+
+The foreground shows a shallow river with calm, gently moving water. Several large rectangular stone stepping stones cross part of the river in the foreground. The stones should look old, heavy and weathered, with slightly uneven surfaces and edges.
+
+In the middle of the scene is an old low stone bridge made from large grey and beige stone blocks. It has a simple stone railing and two strong stone supports standing in the river. The bridge should look naturally aged, with visible stone texture, worn edges and some darker areas from moisture and weather. Make it seem like a place where those village people would sit and wash their laundry.
+
+On the left side of the river is a narrow old stone path following the riverbank. Around the river are lots of natural green vegetation, including willow trees with long hanging branches, bushes, reeds and larger trees in the background. Add a small simple old wooden house or structure partially hidden among the trees in the distance.
+
+The sunlight comes from the upper-left side of the image. Feel like warm early morning or late afternoon sunlight, with a soft golden colour and a little natural haze in the air. The sunlight should gently illuminate the bridge, water and vegetation without creating very harsh shadows.
+
+Use a natural, slightly muted colour palette with soft greens, grey and beige stone, warm yellow-gold sunlight and a slightly pale blue-grey sky. Keep the colours realistic and not too saturated. The image should have a warm cinematic historical-drama look with soft contrast and some atmospheric depth.
+
+For the camera placement, it is around eye level, approximately 1.5–1.7 metres high, using a 35mm full-frame equivalent lens. Medium-wide establishing shot, with the foreground water and stepping stones creating depth towards the bridge in the middle distance. Keep the perspective natural and avoid an exaggerated wide-angle look. The camera should be static and level.
+
+The environment should feel like a real location photographed for a historical film. Include realistic water reflections, natural vegetation, old stone textures and slightly hazy distant trees.
+
+This image will be used as a green-screen background behind live actors, so make sure the scale and perspective feel natural for a person standing in the environment. Leave some usable open space where actors could be placed without important objects directly behind them.
+
+No people, no animals, no modern buildings, no cars, no electricity poles, no fantasy architecture, no overly dramatic mountains, no excessive fog, no oversaturated green, no HDR, no cartoon or painting style. Photorealistic live-action film still."</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE EVIDENCE 2: HISTORICAL CHINESE INTERIOR -->
+    <section class="space-y-6">
+      <div class="border-b border-[#222222] pb-3">
+        <h3 class="serif text-2xl font-normal text-[#FDFBF7]">Plate 02: Traditional Interior & Window Shadow</h3>
+        <p class="text-xs tracking-wider uppercase text-[#FDFBF7]/50 mt-0.5">Early Republican Period &bull; 3000K–4000K Lighting &bull; Composite Ready</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <!-- Image Preview -->
+        <div class="lg:col-span-5">
+          <img 
+            loading="lazy"
+            decoding="async"
+            onclick="openLightbox(this.src)" 
+            src="maxkleen_video_bg_2.png" 
+            alt="Traditional Interior Plate" 
+            class="w-full aspect-[3/2] object-cover rounded-sm border border-[#222222] cursor-pointer hover:opacity-85 transition-all shadow-xl"
+          >
+          <p class="text-[11px] text-center text-[#FDFBF7]/40 mt-2 uppercase tracking-wider">Click image for fullscreen plate view</p>
+        </div>
+
+        <!-- Raw Working Prompt Terminal Box -->
+        <div class="lg:col-span-7 bg-[#141414] border border-[#222222] rounded-sm p-6 space-y-4">
+          <div class="flex items-center justify-between border-b border-[#222222] pb-3">
+            <span class="text-xs uppercase tracking-widest font-semibold text-[#FDFBF7]">Raw Iterative Prompt Evidence</span>
+            <span class="text-[10px] mono bg-[#222222] text-[#FDFBF7]/70 px-2 py-0.5 rounded">3000K–4000K &bull; Lattice Shadow &bull; 35mm</span>
+          </div>
+          <div class="mono text-xs text-[#FDFBF7]/75 leading-relaxed bg-[#0C0C0C] p-4 rounded border border-[#1f1f1f] max-h-[380px] overflow-y-auto whitespace-pre-wrap select-all selection:bg-[#FDFBF7] selection:text-black">"A photorealistic cinematic background of a traditional Chinese interior, inspired by an old rural Chinese house from the late imperial or early Republican period. The room should feel simple, quiet, slightly old and lived-in rather than luxurious.
+
+The room has warm ochre plaster walls, dark aged wooden furniture and exposed wooden ceiling beams. On the back wall are three traditional Chinese calligraphy scrolls, with two old framed Chinese paintings on the left wall. Include a simple wooden bench in the middle of the room, an old wooden chair in the foreground on the left, and a small wooden side table on the right with a simple ceramic vase and a small plant.
+
+On the right side of the room, there are large traditional Chinese wooden lattice windows or doors. Warm sunlight comes through the windows from the right side of the frame and creates soft geometric window shadows across the wall, furniture and floor.
+
+The lighting should feel like warm late-afternoon sunlight, around 3000–4000K, with soft shadows and gentle light falling into the darker room. Keep the interior naturally dark and warm, with some subtle haze or dust visible in the sunlight.
+
+Use an earthy and slightly desaturated colour palette: warm brown wood, ochre walls, beige, dark umber and small amounts of muted green. Warm highlights and slightly darker shadows, but keep enough detail in the darker areas. The image should have a natural cinematic film look rather than looking too clean or digitally generated.
+
+Camera is around eye level, approximately 1.5–1.7 metres high, using a 35mm full-frame equivalent lens. Medium-wide shot with a natural perspective and no strong wide-angle distortion. Keep the camera static and level, like a locked-off shot from a film.
+
+The room should look realistic, with aged wood, slightly uneven walls, worn furniture and natural material textures. It should feel like a real location photographed for a historical drama.
+
+This will be used as a green-screen background, so leave enough clear space for actors to be composited naturally into the room. Keep the floor, walls and furniture perspective consistent with a person standing inside the space.
+
+No people, no modern objects, no fantasy elements, no excessive decoration, no oversaturated colours, no strong HDR, no fisheye lens, no cartoon or illustration style. Photorealistic live-action film still."</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE EVIDENCE 3: 1950s MALAYSIAN KAMPUNG -->
+    <section class="space-y-6">
+      <div class="border-b border-[#222222] pb-3">
+        <h3 class="serif text-2xl font-normal text-[#FDFBF7]">Plate 03: 1950s Malaysian Kampung & Riverbank</h3>
+        <p class="text-xs tracking-wider uppercase text-[#FDFBF7]/50 mt-0.5">Vertical 9:16 &bull; Southeast Asian Stilt House &bull; Daylight Composite</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <!-- Image Preview -->
+        <div class="lg:col-span-5">
+          <img 
+            loading="lazy"
+            decoding="async"
+            onclick="openLightbox(this.src)" 
+            src="maxkleen_video_bg_3.png" 
+            alt="1950s Malaysian Kampung Plate" 
+            class="w-full aspect-[2/3] object-cover rounded-sm border border-[#222222] cursor-pointer hover:opacity-85 transition-all shadow-xl"
+          >
+          <p class="text-[11px] text-center text-[#FDFBF7]/40 mt-2 uppercase tracking-wider">Click image for fullscreen plate view</p>
+        </div>
+
+        <!-- Raw Working Prompt Terminal Box -->
+        <div class="lg:col-span-7 bg-[#141414] border border-[#222222] rounded-sm p-6 space-y-4">
+          <div class="flex items-center justify-between border-b border-[#222222] pb-3">
+            <span class="text-xs uppercase tracking-widest font-semibold text-[#FDFBF7]">Raw Iterative Prompt Evidence</span>
+            <span class="text-[10px] mono bg-[#222222] text-[#FDFBF7]/70 px-2 py-0.5 rounded">9:16 Vertical &bull; 1950s Kampung &bull; Tropical Sun</span>
+          </div>
+          <div class="mono text-xs text-[#FDFBF7]/75 leading-relaxed bg-[#0C0C0C] p-4 rounded border border-[#1f1f1f] max-h-[460px] overflow-y-auto whitespace-pre-wrap select-all selection:bg-[#FDFBF7] selection:text-black">"Create a photorealistic cinematic background of a quiet rural Malaysian fishing village beside a slow-moving river, inspired by the atmosphere of Southeast Asia in the 1950s. The scene should feel authentic, grounded and naturally lived-in, not fantasy or fairy-tale.
+
+Use a vertical 9:16 composition with a relatively low camera position at approximately human eye level, looking straight toward the riverbank and surrounding village landscape. In the foreground, show a wide, natural dirt and grass clearing with plenty of open space for actors to be composited into the scene later. The river should sit in the middle-to-background of the composition rather than dominating the foreground.
+
+On the right side of the frame, place a simple traditional wooden stilt house with weathered horizontal timber walls and a natural thatched roof. The house should feel like an old Malaysian kampung/fishing-village dwelling from the 1950s, handmade and slightly aged, but still realistic and structurally believable. A smaller traditional wooden shelter or house can be partially visible farther behind it near the riverbank.
+
+Surround the river with dense tropical vegetation: mature broadleaf trees, palms, bushes, tall grasses and natural vegetation growing irregularly along the riverbank. Include a large drooping tree entering from the upper-left side of the frame to create foreground depth. The background should gradually become softer and more atmospheric with layers of trees extending into the distance.
+
+The river should be calm and slightly reflective, with subtle natural ripples and muted reflections of the surrounding vegetation. Keep the water relatively dark and natural rather than bright blue.
+
+Lighting should be strong natural tropical daylight, with the sun relatively high in the sky and slightly toward the upper-left portion of the frame, creating warm sunlight, gentle atmospheric haze and realistic soft shadows. The overall colour temperature should be warm and slightly golden, similar to natural midday-to-early-afternoon sunlight in Malaysia, but not excessively orange.
+
+Use realistic natural colours: muted greens, earthy browns, weathered wood, dusty beige soil and subdued blue-grey sky. Avoid oversaturated colours, excessive contrast, artificial HDR, fantasy lighting or dramatic colour grading.
+
+The image should resemble a professionally photographed real location rather than an illustration. Natural textures, realistic wood grain, believable vegetation, subtle atmospheric perspective, physically plausible sunlight, realistic shadows and detailed but imperfect environmental surfaces.
+
+This will be used as a green-screen background, so leave enough clear space for actors to be composited naturally into the room. Keep the floor, walls and furniture perspective consistent with a person standing inside the space.
+
+Photorealistic cinematic environmental plate, authentic 1950s Malaysian kampung atmosphere, natural tropical daylight, realistic materials, subtle filmic softness, restrained colour grading, believable depth and perspective, high environmental detail, documentary-style realism."</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Fullscreen Modal Lightbox -->
+  <div id="lightbox" class="fixed inset-0 z-50 bg-black/95 hidden flex items-center justify-center p-4" onclick="closeLightbox()">
+    <button class="absolute top-6 right-6 text-white text-3xl font-light hover:opacity-70 focus:outline-none">&times;</button>
+    <img id="lightbox-img" src="" alt="Fullscreen View" class="max-h-[90vh] max-w-[90vw] object-contain rounded-sm shadow-2xl">
+  </div>
+
+  <!-- Lightbox Script -->
+  <script>
+    function openLightbox(src) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-[#0C0C0C] py-6">
+    <div class="max-w-6xl mx-auto px-6 text-center space-y-6">
+      <div class="flex justify-center space-x-12 text-sm uppercase tracking-widest font-bold">
+        <a href="index.html" class="hover:text-[#FDFBF7]/60">Home</a>
+        <a href="https://www.instagram.com/austin_workstudio/" class="hover:text-[#FDFBF7]/60" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/in/austin-wong-profile/" class="hover:text-[#FDFBF7]/60" target="_blank">LinkedIn</a>
+      </div>
+      <p class="text-xs text-[#FDFBF7]/50 uppercase tracking-widest">&copy; 2026 Austin Wong Zhen Xiang</p>
+    </div>
+  </footer>
+
+</body>
+</html>
