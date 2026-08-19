@@ -24,13 +24,13 @@
         <span>AUSTIN WONG</span>
       </a>
 
-      <!-- Desktop Nav Links -->
-      <div class="hidden md:flex items-center space-x-12 text-sm">
+      <!-- Desktop Nav Links (Standardized: space-x-8 text-sm) -->
+      <div class="hidden md:flex items-center space-x-8 text-sm">
         <a href="index.html" class="hover:opacity-50 transition-opacity">HOME</a>
         <a href="films.html" class="hover:opacity-50 transition-opacity">FILMS</a>
         <a href="acting.html" class="hover:opacity-50 transition-opacity">PERFORMANCES</a>
         
-        <!-- FILM GRAB DROPDOWN -->
+        <!-- FILM GRAB DROPDOWN (Desktop Only) -->
         <div class="relative group flex items-center">
           <button class="flex items-center gap-1 hover:opacity-50 transition-opacity focus:outline-none uppercase">
             FILM GRAB
@@ -46,18 +46,51 @@
             <a href="the_candle_film_grabs.html" class="block px-4 py-2.5 text-xs tracking-wider hover:bg-[#FDFBF7] hover:text-black transition-colors">The Candle</a>
             <a href="comfort_in_discomfort_film_grabs.html" class="block px-4 py-2.5 text-xs tracking-wider hover:bg-[#FDFBF7] hover:text-black transition-colors">Comfort in Discomfort</a>
             <a href="the_luck_he_left_behind_film_grabs.html" class="block px-4 py-2.5 text-xs tracking-wider hover:bg-[#FDFBF7] hover:text-black transition-colors">the luck he left behind</a>
-            <a href="the_fabulous_secret_of_arowana_film_grabs.html" class="block px-4 py-2.5 text-xs tracking-wider hover:bg-[#FDFBF7] hover:text-black transition-colors">The Fabulous Secret of Arowana</a>
           </div>
         </div>
 
-        <!-- PHOTOGRAPHY -->
         <a href="photography.html" class="hover:opacity-50 transition-opacity">PHOTOGRAPHY</a>
-        <a href="creative_lab.html" class="hover:opacity-50 transition-opacity">Creative Lab</a>
+        <a href="creative_lab.html" class="hover:opacity-50 transition-opacity">CREATIVE LAB</a>
         <a href="index.html#contact" class="hover:opacity-50 transition-opacity">CONTACT</a>
       </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="menu-btn" class="block md:hidden text-[#FDFBF7] focus:outline-none pr-4" aria-label="Toggle Navigation">
+        <svg class="w-6 h-6 fill-none stroke-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu (Clean 6 Links: No Film Grab) -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-[#222222] bg-[#0C0C0C] px-6 py-6 flex flex-col space-y-4 text-center text-base">
+      <a href="index.html" class="hover:opacity-50 transition-opacity py-2">Home</a>
+      <a href="films.html" class="hover:opacity-50 transition-opacity py-2">Films</a>
+      <a href="acting.html" class="hover:opacity-50 transition-opacity py-2">Performances</a>
+      <a href="photography.html" class="hover:opacity-50 transition-opacity py-2">Photography</a>
+      <a href="creative_lab.html" class="hover:opacity-50 transition-opacity py-2">Creative Lab</a>
+      <a href="index.html#contact" class="hover:opacity-50 transition-opacity py-2">Contact</a>
     </div>
   </nav>
 
+  <!-- JavaScript to Toggle Mobile Menu -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Automatically close menu when any mobile link is tapped
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    }
+  </script>
   <!-- Dark Grey Title Banner -->
   <div class="bg-[#19181A] border-b border-[#222222] py-10 md:py-14 text-center">
     <h1 class="serif text-4xl md:text-5xl italic font-bold tracking-widest text-[#FDFBF7] uppercase">
